@@ -50,8 +50,7 @@
   </div>
 
   <!-- Sidebar on small screens when clicking the menu icon -->
-<!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
     <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button">Research</a>
@@ -61,122 +60,40 @@
     <a href="#conferences" onclick="w3_close()" class="w3-bar-item w3-button">Conferences</a>
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
   </nav>
+  
+  <!-- Header with full-height image -->
+  <header class="bgimg-1 w3-display-container" id="home" role="banner">
+  <div class="w3-display-left w3-text-white" style="padding:48px; max-width:680px;">
+    <span class="w3-jumbo w3-hide-small">Maria Insa‑Iglesias</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Maria Insa‑Iglesias</span><br>
+    <span class="w3-large">AI Experience Designer & Data Scientist — Human‑AI Interaction, UX Research & Immersive Systems</span>
 
-  <!-- START: Strata-like header / intro -->
-  <header id="header" class="w3-display-container" role="banner" style="padding:48px 6%; background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.22)), url('/images/research_virtual_tour_(1).png') center/cover no-repeat;">
-    <div style="max-width:1100px; margin:0 auto; display:flex; gap:32px; align-items:center; color:#fff;">
-      <div style="flex:0 0 160px;">
-        <img src="/images/avatar.png" alt="Maria avatar" style="width:160px; height:160px; object-fit:cover; border-radius:50%; box-shadow:0 6px 18px rgba(0,0,0,0.4);">
-      </div>
-      <div style="flex:1">
-        <h1 style="margin:0; font-size:2.4rem;">Maria Insa‑Iglesias</h1>
-        <p style="margin:6px 0 12px; font-weight:600;">AI Experience Designer & Data Scientist — Human‑AI Interaction, UX Research & Immersive Systems</p>
-        <p class="w3-opacity" style="max-width:720px; margin-bottom:12px;">
-          AI Experience Designer and Data Scientist with 7 years' experience designing end‑to‑end tools that make intelligent systems understandable and usable. Specialises in visualisation, prototyping and immersive interfaces (VR/AR).
-        </p>
-        <p style="margin-top:8px;">
-          <strong>Edinburgh, UK</strong> &nbsp; • &nbsp;
-          <a class="w3-button w3-white w3-small" href="https://www.linkedin.com/in/maria-insa-iglesias-7a96ba124/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="w3-button w3-black w3-small" href="mailto:insaiglesias.maria@gmail.com">Email</a>
-          <a class="w3-button w3-light-grey w3-small" href="#research">Projects</a>
-        </p>
-      </div>
-    </div>
-  </header>
-  <!-- END: Strata-like header / intro -->
+    <p class="w3-margin-top w3-opacity" style="max-width:560px;">
+      An AI Experience Designer and Data Scientist with 7 years' experience designing end‑to‑end tools that make intelligent systems understandable and usable. I specialise in human‑AI interaction, visualisation, prototyping and immersive interfaces (VR/AR).
+    </p>
 
-   <!-- START: Main content (About + Recent Work grid) -->
-  <main style="max-width:1100px; margin:32px auto; padding:0 6%;">
-    <section id="about" style="padding:32px 0;">
-      <div style="display:flex; gap:32px; flex-wrap:wrap;">
-        <div style="flex:1 1 58%;">
-          <h2>About</h2>
-          <p class="w3-justify">
-            I design and build AI‑driven visual tools and immersive experiences that help non‑AI experts understand and act on complex data. My work sits at the intersection of HCI, UX research and data science — delivering production‑ready visualisations, prototypes and evaluation workflows. I have experience leading cross‑disciplinary projects, writing grant proposals, and shipping customer‑facing web tools.
-          </p>
-          <p class="w3-justify">
-            Selected roles include Data Visualiser at Intelligent Growth Solutions (Plotly.js + Angular), Tech/Research Fellow at Glasgow Caledonian University/CTI, UX freelance work and Product Design Engineering in R&D. I hold a PhD in Data Visualisation (GCU).
-          </p>
-        </div>
-
-        <aside style="flex:1 1 34%;">
-          <h3>Core expertise</h3>
-          <ul class="w3-ul">
-            <li><strong>Human‑AI Interaction</strong> — conversational UX, agentive interfaces</li>
-            <li><strong>Research & Design</strong> — UX research, prototyping, VR/AR</li>
-            <li><strong>AI & Data</strong> — Python, Plotly.js, Angular, TypeScript, SQL, R</li>
-            <li><strong>Visualisation & UI</strong> — Figma, D3.js, Tableau, Blender</li>
-            <li><strong>Methodologies</strong> — Design Thinking, Agile, accessible design</li>
-          </ul>
-        </aside>
-      </div>
-    </section>
-
-    <section id="research" style="padding:24px 0;">
-      <h2>Recent Work</h2>
-      <p class="w3-opacity">Click any project to open the case study.</p>
-
-      <div class="w3-row-padding w3-margin-top" style="margin-bottom:24px;">
-        <!-- keep your existing .project-card grid but ensure each column is closed correctly -->
-        <div class="w3-col m4 s12" style="margin-bottom:24px;">
-          <div class="project-card w3-card-4" data-title="360° Virtual Tour of GCU" data-tags="VR · Web · Marzipano" data-img="/images/research_virtual_tour_(1).png" data-desc="Design and development of a 360 Virtual Tour website for campus immersion. Tools: HTML, JS, CSS, Marzipano." data-more="https://campus.gcu.ac.uk/">
-            <img src="/images/research_virtual_tour_(1).png" alt="360 Virtual Tour">
-            <div class="project-overlay"><h4>360° Virtual Tour</h4><div class="project-tags">VR · Web</div></div>
-          </div>
-        </div>
-
-        <div class="w3-col m4 s12" style="margin-bottom:24px;">
-          <div class="project-card w3-card-4" data-title="AI Visualisation Tool for Covid-19" data-tags="AI · Healthcare · Streamlit" data-img="/images/research_coronohack_alpacas_(1).png" data-desc="Prototype visualisation tool showing COVID-19 severity using X-rays and clinical data.">
-            <img src="/images/research_coronohack_alpacas_(1).png" alt="AI Visualisation Tool">
-            <div class="project-overlay"><h4>AI Visualisation Tool</h4><div class="project-tags">AI · Healthcare</div></div>
-          </div>
-        </div>
-
-        <div class="w3-col m4 s12" style="margin-bottom:24px;">
-          <div class="project-card w3-card-4" data-title="2D/3D Visual Analytic Tool" data-tags="Immersive · 3D · Unreal" data-img="/images/research_3d_vis_(1)_1.png" data-desc="2D/3D tool to support structural examiners allocating defects in photorealistic 3D environments.">
-            <img src="/images/research_3d_vis_(1)_1.png" alt="2D/3D Visual Analytic Tool">
-            <div class="project-overlay"><h4>2D/3D Visual Analytics</h4><div class="project-tags">Immersive · 3D</div></div>
-          </div>
-        </div>
-
-        <!-- Row 2 -->
-        <div class="w3-col m4 s12" style="margin-bottom:24px;">
-          <div class="project-card w3-card-4" data-title="Image Acquisition System" data-tags="Hardware · Imaging" data-img="/images/research_image_aquisition_(1).jpg" data-desc="Optical-thermal camera rig for railway tunnel inspection." data-more="https://ieeexplore.ieee.org/abstract/document/8052679">
-            <img src="/images/research_image_aquisition_(1).jpg" alt="Image Acquisition System">
-            <div class="project-overlay"><h4>Image Acquisition System</h4><div class="project-tags">Imaging · Hardware</div></div>
-          </div>
-        </div>
-
-        <div class="w3-col m4 s12" style="margin-bottom:24px;">
-          <div class="project-card w3-card-4" data-title="Visualising Water Environment" data-tags="GIS · Environmental" data-img="/images/researc_crewproject_(1).png" data-desc="Data visualisation solutions to communicate pharmaceutical concentrations and risk in water." data-more="https://www.crew.ac.uk/projects">
-            <img src="/images/researc_crewproject_(1).png" alt="Visualising Water Environment">
-            <div class="project-overlay"><h4>Water Environment Visualisation</h4><div class="project-tags">GIS · Research</div></div>
-          </div>
-        </div>
-
-        <div class="w3-col m4 s12" style="margin-bottom:24px;">
-          <div class="project-card w3-card-4" data-title="Web-based 2D/3D Visualisation" data-tags="D3 · Potree · R" data-img="/images/researc_vis_(1).png" data-desc="Exploration of open-source tools for interactive 2D/3D visualisation (D3, Potree, R).">
-            <img src="/images/researc_vis_(1).png" alt="Web-based 2D/3D Visualisation">
-            <div class="project-overlay"><h4>Web-based 2D/3D Visuals</h4><div class="project-tags">Web · 3D</div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    </main>
+    <p style="margin-top:16px;">
+      <strong>Edinburgh, UK</strong> &nbsp; • &nbsp;
+      <a class="w3-button w3-white w3-small" href="https://www.linkedin.com/in/maria-insa-iglesias-7a96ba124/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="w3-button w3-black w3-small" href="mailto:insaiglesias.maria@gmail.com">Email</a>
+      <a class="w3-button w3-light-grey w3-small" href="#research">Projects</a>
+    </p>
+  </div>
+</header>
 
   <div class="w3-container" style="padding:128px 10%" id="about">
     <div class="w3-row-padding">
-        <div class="w3-col m7 s12">
-            <h2>About</h2>
-            <p class="w3-justify">
-                I design and build AI‑driven visual tools and immersive experiences that help non‑AI experts understand and act on complex data. My work sits at the intersection of HCI, UX research and data science — delivering production‑ready visualisations, prototypes and evaluation workflows. I have experience leading cross‑disciplinary projects, writing grant proposals, and shipping customer‑facing web tools.
-            </p>
+    <div class="w3-col m7 s12">
+      <h2>About</h2>
+      <p class="w3-justify">
+        I design and build AI‑driven visual tools and immersive experiences that help non‑AI experts understand and act on complex data. My work sits at the intersection of HCI, UX research and data science — delivering production‑ready visualisations, prototypes and evaluation workflows. I have experience leading cross‑disciplinary projects, writing grant proposals, and shipping customer‑facing web tools.
+      </p>
 
-            <p class="w3-justify">
-                Selected roles include Data Visualiser at Intelligent Growth Solutions (Plotly.js + Angular), Tech/Research Fellow at Glasgow Caledonian University/CTI, UX freelance work and Product Design Engineering in R&D. I hold a PhD in Data Visualisation (GCU).
-            </p>
-        </div>
+      <p class="w3-justify">
+        Selected roles include Data Visualiser at Intelligent Growth Solutions (Plotly.js + Angular), Tech/Research Fellow at Glasgow Caledonian University/CTI, UX freelance work and Product Design Engineering in R&D. I hold a PhD in Data Visualisation (GCU).
+      </p>
     </div>
+  </div>
 
     <div class="w3-container w3-light-grey" style="padding:128px 10%" id="research">
         <div class="w3-container w3-light-grey" style="padding:64px 6%" id="research">
@@ -283,55 +200,55 @@
         </div>
     </div>
 
-        <!-- Project Modal -->
-        <div id="projectModal" class="w3-modal" style="display:none">
-            <div class="w3-modal-content project-modal w3-animate-top w3-white">
-            <header class="w3-container w3-padding">
-                <span onclick="closeProject()" class="w3-button w3-display-topright">&times;</span>
-                <h3 id="pm-title"></h3>
-                <div id="pm-tags" class="w3-opacity"></div>
-            </header>
-            <div class="w3-container" style="padding:16px">
-                <img id="pm-img" src="" alt="">
-                <p id="pm-desc"></p>
-                <p><a id="pm-more" class="w3-button w3-light-grey" href="#" target="_blank" style="display:none">View more</a></p>
-            </div>
-            <footer class="w3-container w3-light-grey w3-padding">
-                <button class="w3-button w3-right" onclick="closeProject()">Close</button>
-            </footer>
-            </div>
-        </div>
+  <!-- Project Modal -->
+  <div id="projectModal" class="w3-modal" style="display:none">
+    <div class="w3-modal-content project-modal w3-animate-top w3-white">
+      <header class="w3-container w3-padding">
+        <span onclick="closeProject()" class="w3-button w3-display-topright">&times;</span>
+        <h3 id="pm-title"></h3>
+        <div id="pm-tags" class="w3-opacity"></div>
+      </header>
+      <div class="w3-container" style="padding:16px">
+        <img id="pm-img" src="" alt="">
+        <p id="pm-desc"></p>
+        <p><a id="pm-more" class="w3-button w3-light-grey" href="#" target="_blank" style="display:none">View more</a></p>
+      </div>
+      <footer class="w3-container w3-light-grey w3-padding">
+        <button class="w3-button w3-right" onclick="closeProject()">Close</button>
+      </footer>
+    </div>
+  </div>
 
-        <script>
-            function openProject(card){
-            if(!(card instanceof Element)) return;
-            var title = card.dataset.title || '';
-            var tags = card.dataset.tags || '';
-            var img = card.dataset.img || '';
-            var desc = card.dataset.desc || '';
-            var more = card.dataset.more || '';
-            document.getElementById('pm-title').textContent = title;
-            document.getElementById('pm-tags').textContent = tags;
-            document.getElementById('pm-img').src = img;
-            document.getElementById('pm-desc').textContent = desc;
-            var moreEl = document.getElementById('pm-more');
-            if(more && more.trim() !== ''){
-                moreEl.href = more;
-                moreEl.style.display = 'inline-block';
-            } else {
-                moreEl.style.display = 'none';
-            }
-            document.getElementById('projectModal').style.display = 'block';
-            }
-            function closeProject(){
-            document.getElementById('projectModal').style.display = 'none';
-            }
-            // Attach click handlers for existing cards
-            document.addEventListener('DOMContentLoaded', function(){
-            var cards = document.querySelectorAll('.project-card');
-            cards.forEach(function(c){ c.addEventListener('click', function(){ openProject(c); }); });
-            });
-        </script>
+  <script>
+    function openProject(card){
+      if(!(card instanceof Element)) return;
+      var title = card.dataset.title || '';
+      var tags = card.dataset.tags || '';
+      var img = card.dataset.img || '';
+      var desc = card.dataset.desc || '';
+      var more = card.dataset.more || '';
+      document.getElementById('pm-title').textContent = title;
+      document.getElementById('pm-tags').textContent = tags;
+      document.getElementById('pm-img').src = img;
+      document.getElementById('pm-desc').textContent = desc;
+      var moreEl = document.getElementById('pm-more');
+      if(more && more.trim() !== ''){
+        moreEl.href = more;
+        moreEl.style.display = 'inline-block';
+      } else {
+        moreEl.style.display = 'none';
+      }
+      document.getElementById('projectModal').style.display = 'block';
+    }
+    function closeProject(){
+      document.getElementById('projectModal').style.display = 'none';
+    }
+    // Attach click handlers for existing cards
+    document.addEventListener('DOMContentLoaded', function(){
+      var cards = document.querySelectorAll('.project-card');
+      cards.forEach(function(c){ c.addEventListener('click', function(){ openProject(c); }); });
+    });
+  </script>
 
         <!-- <div class="w3-row-padding">
             <h2>Research</h2>
@@ -448,7 +365,7 @@
                     <p> <br><br></p>
                 </div>
             </div> -->
-        <!-- </div> -->
+        </div>
     </div>
 
     <div class="w3-container" style="padding:128px 10%" id="publications">
