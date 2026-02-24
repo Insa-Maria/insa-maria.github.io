@@ -1,274 +1,539 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Multiverse by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<title>MII: Maira Insa Iglesias | Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
-<link rel="stylesheet" href="googleapis-family-raleway.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<!-- <link rel="stylesheet" href="font-awesome.min.css"> -->
-<link rel="stylesheet" href="style.css">
+	<head>
+		<title>Portfolio by Maria Insa Iglesias</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-<body> 
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-    <!-- Navbar (sit on top) test -->
-<div class="w3-top">
-    <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="#home" class="w3-bar-item w3-button w3-wide">MII | PORTFOLIO </a>
-      <!-- Right-sided navbar links -->
-      <div class="w3-right w3-hide-small">
-        <a href="#about" class="w3-bar-item w3-button"> About</a>
-        <a href="#research" class="w3-bar-item w3-button"> Research</a>
-        <a href="#publications" class="w3-bar-item w3-button"> Publications</a>
-        <a href="#achievements" class="w3-bar-item w3-button"> Achievements</a>
-        <a href="#academia" class="w3-bar-item w3-button">Academic Service</a>
-        <a href="#conferences" class="w3-bar-item w3-button"> Conferences</a>
-        <a href="#contact" class="w3-bar-item w3-button"> Contact</a>
-      </div>
-      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-  
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-  </div>
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html"><strong>Multiverse</strong> by HTML5 UP</a></h1>
+						<nav>
+							<ul>
+								<li><a href="#footer" class="icon solid fa-info-circle">About</a></li>
+							</ul>
+						</nav>
+					</header>
 
-  <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-    <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button">Research</a>
-    <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button">Publications</a>
-    <a href="#achievements"  onclick="w3_close()" class="w3-bar-item w3-button"> Achievements</a>
-    <a href="#academia" onclick="w3_close()" class="w3-bar-item w3-button">Academic Service</a>
-    <a href="#conferences" onclick="w3_close()" class="w3-bar-item w3-button">Conferences</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
-  </nav>
-  
-  <!-- Header with full-height image -->
-  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-    <div class="w3-display-left w3-text-white" style="padding:48px">
-        <!-- Title for large screens -->
-        <span class="w3-jumbo w3-hide-small">Welcome to MII World</span><br>
-        <!-- Title for small screens -->
-        <span class="w3-xxlarge w3-hide-large w3-hide-medium">Welcome to MII World</span><br> 
-        <span class="w3-large">"I am a driven, passionate and dedicated visualization designer looking forward delivering unforgettable experiences"<br> Maria Insa Iglesias, PhD Student based in Edinburgh (UK)</span>
-        <!-- <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more</a></p> -->
-    </div> 
 
-  </header>
+                <!-- Main -->
+                <div id="main">
+                    <!-- AI Visualisation Tool for Covid-19 -->
+                    <article class="thumb">
+                        <a href="#popup-ai-covid" class="modal-link" data-full="images/thumbs/research_coronohack_alpacas_2.png" title="AI Visualisation Tool for Covid-19">
+                            <img src="images/thumbs/research_coronohack_alpacas_2.png" alt="AI Visualisation Tool for Covid-19" />
+                        </a>
+                        <h2>AI Visualisation Tool for Covid-19</h2>
+                        <p>Prototype tool to aid first diagnosis from chest X‑rays — Streamlit, Python. 2nd place at CoronaHack.</p>
+                    </article>
 
-  <div class="w3-container" style="padding:128px 10%" id="about">
-    <div class="w3-row-padding">
-        <h2>About</h2>
+                    <!-- 360 Virtual Tour (thumb) -->
+                    <article class="thumb">
+                        <a href="#popup-virtual-tour" class="modal-link" data-full="images/fulls/research_virtual_tour_2.png" title="360 Virtual Tour of GCU">
+                            <img src="images/thumbs/research_virtual_tour_2.png" alt="360 Virtual Tour of GCU" />
+                        </a>
+                        <h2>360 Virtual Tour of GCU</h2>
+                        <p>Interactive 360° campus tour — Marzipano, Ricoh Theta. Conference paper and open-source code.</p>
+                    </article>
 
-        <h6 class="w3-justify">Maria Insa-Iglesias is a PhD student at the <a href="https://www.gcu.ac.uk/study/undergraduate/subjects/computing/"> School of Computing of Glasgow Caledonian University (GCU) </a> supervised by <a href="https://researchonline.gcu.ac.uk/en/persons/gordon-morison">Prof Gordon Morison</a> and <a href="https://researchonline.gcu.ac.uk/en/persons/mark-jenkins"> Dr Mark D. Jenkins</a>. Her research is focused on Data Visualisation with Artificial Intelligence (AI) and Virtual Reality (VR). <br><br>
-            Maria studied her BEng (Hons) Industrial Design Engineering and Product Development at <a href="https://www.upc.edu/en">University of Catalonia (UPC)</a>. She did her Bachelor Thesis at GCU as part of the <a href="http://www.europeanprojectsemester.eu/">European Project Semester (EPS)</a> programme in 2017. As a result of the successful EPS project with GCU and Geckotech Solution Ltd, she was offered a position at the company.<br><br>
-            Having a background in product design and seeking challenges and knowledge, in 2018 Maria decided to continue her life journey as a PhD student in Data Visualization for AI and VR. <br><br>
-            Welcome to MII world, enjoy my work as much as I do and feel free to <a href="mailto:maria.insaiglesias@gcu.ac.uk">contact me</a>.
-        </h6>
-    </div>
-  </div>
+                    <!-- Web-based 2D/3D Visualisation -->
+                    <article class="thumb">
+                        <a href="#popup-web-vis" class="modal-link" data-full="images/fulls/research_vis_1.png" title="Web-based 2D/3D Visualisation">
+                            <img src="images/thumbs/research_vis_1.png" alt="D3 and R visualisations" />
+                        </a>
+                        <h2>Web-based 2D/3D Visualisation</h2>
+                        <p>Exploration of D3, Potree, ggplot2 for interactive 2D/3D visual analytics.</p>
+                    </article>
 
-    <div class="w3-container w3-light-grey" style="padding:128px 10%" id="research">
-        <div class="w3-row-padding">
-            <h2>Research</h2>
-            
-            <div class="w3-container">
-                <div class="w3-col m6">
-                    <h4>360 Virtual Tour of GCU</h4>
-                    <p class="w3-justify"><b>Overview:</b> With COVID-19 outbreak, Maria’s PhD supervisor Professor Gordon Morison decided to purchase a 360 camera and for a short period repurpose Maria’s Data Visualization talents. This was initially for the Department of Computing, but immediately became School then subsequently University wide.</p>
-                    <p class="w3-justify"><b>Challenge:</b> Design and development of a 360 Virtual Tour website so that future students can navigate through Glasgow Campus facilities and have an immersive campus experience.</p>
-                    <p class="w3-justify"><b>Scope:</b> Six weeks. From research to conception, prototyping, testing and launch.</p>
-                    <p class="w3-justify"><b>Tools:</b> HTML, JS, CSS, Marzipano, Ricoh Theta, Resolve 360</p>
-                    <p class="w3-justify"><b>Achievement:</b> Successful project launch to life, <a href="https://campus.gcu.ac.uk/">Visit here!</a>.<br> Paper accepted in <a href="https://www.scitepress.org/PublicationsDetail.aspx?ID=TzsprwABGhI=&t=1">Proceedings of the 16th International Conference on Web Information Systems and Technologies (WEBIST 2020)</a>.</p>
-                    <p class="w3-justify"><b><i class="fa fa-github fa-fw w3-xxlarge"></i><a href="https://github.com/Insa-Maria/Virtual_Tour.git">Open Source Code</a></b></p>
-                    <p class="w3-justify"><b><i class="fa fa-youtube fa-fw w3-xxlarge"></i><a href="https://youtu.be/Hf_jQ0Z_Shs">Conference Presentation</a></b></p>
+                    <!-- Visualising Water Environment (CREW -->
+                     <article class="thumb">
+                        <a href="#popup-crew" class="modal-link" data-full="images/fulls/research_crewproject_2.png" title="Visualising Water Environment — CREW">
+                             <img src="images/thumbs/research_crewproject_2.png" alt="Vis Tool mock up" />
+                         </a>
+                         <h2>Visualising Water Environment</h2>
+                         <p>CREW project: visual solutions to communicate pharmaceutical concentration in water.</p>
+                     </article>
+
+                    <!-- 2D/3D Visual Analytic Tool -->
+                    <article class="thumb">
+                        <a href="#popup-2d3d" class="modal-link" data-full="images/fulls/research_3d_vis_1_1.png" title="2D/3D Visual Analytic Tool">
+                             <img src="images/thumbs/research_3d_vis_1_1.png" alt="2D/3D Dashboard on a PC" />
+                         </a>
+                         <h2>2D/3D Visual Analytic Tool</h2>
+                         <p>Tool for structural condition monitoring — C++, Unreal Engine, Blender.</p>
+                     </article>
+ 
+                    <!-- Image Acquisition System -->
+                     <article class="thumb">
+                        <a href="#popup-image-acq" class="modal-link" data-full="images/fulls/research_image_aquisition_1.jpg" title="Image Acquisition System">
+                             <img src="images/thumbs/research_image_aquisition_1.jpg" alt="Imaging Acquisition Prototype" />
+                         </a>
+                         <h2>Image Acquisition System</h2>
+                         <p>Optical-thermal rig for railway tunnel inspections — AutoCAD, SolidWorks.</p>
+                     </article>
+
+                    <!-- IGS Crop Height Tracker -->
+                    <article class="thumb">
+                        <a href="#popup-crop-tracker" class="modal-link" data-full="images/fulls/crop_tracker_device.png" title="IGS Crop Height Tracker">
+                            <img src="images/thumbs/crop_tracker_device.png" alt="IGS Crop Height Tracker" />
+                        </a>
+                        <h2>IGS Crop Height Tracker</h2>
+                        <p>AI Plant Monitoring Interface — Azure, TypeScript, Angular, Plotly.js. Feb–Aug 2022.</p>
+                    </article>
+
+
+                    <!-- IGS Crop Height Tracker User Guide -->
+                    <article class="thumb">
+                        <a href="#popup-crop-tracker-guide" class="modal-link" data-full="images/fulls/cht_user_guide_pc_flipped2.png" title="IGS Crop Height Tracker User Guide">
+                            <img src="images/thumbs/cht_user_guide_pc_flipped2.png" alt="IGS Crop Height Tracker User Guide" />
+                        </a>
+                        <h2>IGS Crop Height Tracker User Guide</h2>
+                        <p>User guide for the IGS Crop Height Tracker — documentation, tutorials, API reference.</p>
+                    </article>
+
+                    <!-- IGS Visualisation Standards & Catalogue -->
+                    <article class="thumb">
+                        <a href="#popup-igs-visuals" class="modal-link" data-full="images/fulls/igs_visualisation_catalogue.png" title="IGS Visualisation Standards & Catalogue">
+                            <img src="images/thumbs/igs_visualisation_catalogue.png" alt="IGS Visualisation Standards" />
+                        </a>
+                        <h2>IGS Visualisation Standards</h2>
+                        <p>Standards, catalogue and python package for consistent plots — matplotlib, plotly, holoviews.</p>
+                    </article>   
                 </div>
-                <div class="w3-col m6" style="padding: 70px 20px;">
-                    <img class="w3-image" src="/images/research_virtual_tour_(1).png" alt="360 Virtual Tour of GCU" width="500" height="394">
-                    <p></p>
-                    <img class="w3-image" src="/images/research_virtual_tour_(2).png" alt="360 Virtual Tour of GCU" width="500" height="394">
-                    <p> <br><br></p>
+
+                <!-- Hidden popup content (used by modal -->
+                <div id="popup-ai-covid" class="popup-content" style="display:none;">
+                    <h2>AI Visualisation Tool for Covid-19 First Diagnosis</h2>
+                    <div class="popup-body">
+                        <!-- full-width banner image that fills the popup window -->
+                        <div style="flex:1 1 100%;">
+                            <a href="images/fulls/research_coronohack_alpacas_2.png" class="image">
+                                <img src="images/fulls/research_coronohack_alpacas_2.png" alt="" style="width:100%;height:auto;display:block;" />
+                            </a>
+                        </div>
+                            
+                        <div class="popup-left">
+                            <p class="w3-justify"><b>Overview:</b> Members from GCU's Data Science Research Group, led by Professor Gordon Morison, took part in the Corona Hack. This is a week-long competition, organised by artificial-intelligence consultancy Mindstream-AI, where multi-disciplinary teams from all over the UK use their data skills to devise innovative techniques to combat COVID-19 using publicly available data. The entire event took place online using Slack and Microsoft Teams.</p>
+                            <p class="w3-justify"><b>Challenge:</b> The GCU team, which Maria was part, developed a solution to aid first diagnosis of COVID-19 in hospitals based on chest X-rays and clinical annotations. During the course of the week, the team members used their data science and software-development skills to create a prototype visualisation tool, which uses X-ray images and other patient data to show doctors the level of COVID-19 severity in a patient.</p>
+                            <p class="w3-justify"><b>Scope:</b> Five Days. From research to conception, prototyping.</p>
+                            <p class="w3-justify"><b>Tools:</b> <a href="https://www.streamlit.io/">Streamlit</a>, Python, AI</p>
+                            <p class="w3-justify"><b>Achievement:</b> <a href="https://www.gcu.ac.uk/student/news/studentnews-coronahack/">2nd place Hackathon Competition</a>.</p>
+                        </div>
+                        <div class="popup-right">
+                            <img src="images/fulls/research_coronohack_alpacas_1.png" alt="AI vis Tool pipeline" style="max-width:100%;height:auto;margin-bottom:12px;">
+                            <img src="images/fulls/research_coronohack_alpacas_2.png" alt="AI vis Tool prototype" style="max-width:100%;height:auto;">
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="w3-container">
-                <div class="w3-col m6">
-                    <h4>AI Visualisation Tool for Covid-19 First Diagnosis</h4>
-                    <p class="w3-justify"><b>Overview:</b> Members from GCU's Data Science Research Group, led by Professor Gordon Morison, took part in the Corona Hack. This is a week-long competition, organised by artificial-intelligence consultancy Mindstream-AI, where multi-disciplinary teams from all over the UK use their data skills to devise innovative techniques to combat COVID-19 using publicly available data. The entire event took place online using Slack and Microsoft Teams.</p>
-                    <p class="w3-justify"><b>Challenge:</b> The GCU team, which Maria was part, developed a solution to aid first diagnosis of COVID-19 in hospitals based on chest X-rays and clinical annotations. During the course of the week, the team members used their data science and software-development skills to create a prototype visualisation tool, which uses X-ray images and other patient data to show doctors the level of COVID-19 severity in a patient.</p>
-                    <p class="w3-justify"><b>Scope:</b> Five Days. From research to conception, prototyping.</p>
-                    <p class="w3-justify"><b>Tools:</b> <a href="https://www.streamlit.io/">Streamlit</a>, Python, AI</p>
-                    <p class="w3-justify"><b>Achievement:</b> <a href="https://www.gcu.ac.uk/student/news/studentnews-coronahack/">2nd place  Hackathon Competition</a>.</p>
+                <div id="popup-virtual-tour" class="popup-content" style="display:none;">
+                    <h2>360 Virtual Tour of GCU</h2>
+                    <div class="popup-body">
+                        
+                        <!-- full-width banner image that fills the popup window -->
+                        <div style="flex:1 1 100%;margin-bottom:20px;">
+                            <a href="images/fulls/research_virtual_tour_2.png" class="image">
+                                <img src="images/fulls/research_virtual_tour_2.png" alt="360 Virtual Tour of GCU" style="width:100%;height:auto;display:block;" />
+                            </a>
+                        </div>
+
+                        <div class="w3-container popup-left">
+                            <div class="w3-col m12">
+                                <h4>360 Virtual Tour of GCU</h4>
+                                <p class="w3-justify"><b>Overview:</b> With COVID-19 outbreak, Maria’s PhD supervisor Professor Gordon Morison decided to purchase a 360 camera and for a short period repurpose Maria’s Data Visualization talents. This was initially for the Department of Computing, but immediately became School then subsequently University wide.</p>
+                                <p class="w3-justify"><b>Challenge:</b> Design and development of a 360 Virtual Tour website so that future students can navigate through Glasgow Campus facilities and have an immersive campus experience.</p>
+                                <p class="w3-justify"><b>Scope:</b> Six weeks. From research to conception, prototyping, testing and launch.</p>
+                                <p class="w3-justify"><b>Tools:</b> HTML, JS, CSS, Marzipano, Ricoh Theta, Resolve 360</p>
+                                <p class="w3-justify"><b>Achievement:</b> Successful project launch to life, <a href="https://campus.gcu.ac.uk/">Visit here!</a>.<br> Paper accepted in <a href="https://www.scitepress.org/PublicationsDetail.aspx?ID=TzsprwABGhI=&t=1">Proceedings of WEBIST 2020</a>.</p>
+                                <p class="w3-justify"><b><i class="fa fa-github fa-fw w3-xxlarge"></i> <a href="https://github.com/Insa-Maria/Virtual_Tour.git">Open Source Code</a></b></p>
+                                <p class="w3-justify"><b><i class="fa fa-youtube fa-fw w3-xxlarge"></i> <a href="https://youtu.be/Hf_jQ0Z_Shs">Conference Presentation</a></b></p>
+                            </div>
+                        </div>
+                        <div class="popup-right" style="padding: 70px 20px;">
+                            <img src="images/fulls/research_virtual_tour_1.png" alt="360 Virtual Tour of GCU" style="max-width:100%;height:auto;margin-bottom:12px;">
+                            <img src="images/fulls/research_virtual_tour_2.png" alt="360 Virtual Tour of GCU" style="max-width:100%;height:auto;">
+                        </div>
+                    </div>
                 </div>
-                <div class="w3-col m6" style="padding: 70px 20px;">
-                    <img class="w3-image" src="/images/research_coronohack_alpacas_(1).png" alt="AI vis Tool pipeline" width="500" height="394">
-                    <p></p>
-                    <img class="w3-image" src="/images/research_coronohack_alpacas_(2).png" alt="AI vis Tool prototype" width="500" height="394">
-                    <p> <br><br></p>
+
+                <div id="popup-web-vis" class="popup-content" style="display:none;">
+                    <h2>Web-based 2D/3D Visualisation</h2>
+                    <div class="popup-body">
+                        <!-- full-width banner image that fills the popup window -->
+                        <div style="flex:1 1 100%;margin-bottom:20px;">
+                            <a href="images/fulls/research_vis_1.png" class="image">
+                                <img src="images/fulls/research_vis_1.png" alt="Web-based 2D/3D Visualisation" style="width:100%;height:auto;display:block;" />
+                            </a>
+                        </div>
+
+                        <div class="popup-left">
+                            <p class="w3-justify"><b>Overview:</b> Many open-source tools like JavaScript library D3, Tableau and R exist to create interactive visualisation platform. Furthermore, there are other tools that allow rendering and interacting 3D graphics like Potree.</p>
+                            <p class="w3-justify"><b>Challenge:</b> Exploration of open-source for 2D and 3D interactive visualisation. Potree allowed discovering its potential tools to measure, annotate and extract the elevation profile from 3D reconstructed model. R and D3 allowed exploring common visualisation techniques such as parallel coordinate and boxplot graphs.</p>
+                            <p class="w3-justify"><b>Tools:</b> <a href="https://d3js.org/">D3.js</a>, <a href="http://potree.org/getting_started.html">Potree</a>, <a href="https://ggplot2.tidyverse.org/index.html">ggplot2</a>, RStudio</p>
+                        </div>
+                        <div class="popup-right">
+                            <img src="images/fulls/research_vis_1.png" alt="D3 and R visualisations" style="max-width:100%;height:auto;margin-bottom:12px;">
+                            <img src="images/fulls/research_vis_2.png" alt="Potree 3D Visualisation" style="max-width:100%;height:auto;">
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- <div class="w3-container">
-                <div class="w3-col m6">
-                    <h4>Immersive Analytics for Structural Condition Monitoring and Analysis</h4>
-                    <p class="w3-justify"><b>Overview:</b> Following Maria’s research on <a href="#visual" onclick="w3_close()">“2D/3D Visual Analytic Tool for Structural Condition Monitoring and Analysis”</a>, computer-based visualisation is an effective method to allow users interpret data to extract insights. However, these visualisations are usually limited to traditional two-dimensional screen.</p>
-                    <p class="w3-justify"><b>Challenge:</b> Development of an immersive visualisation platform which allows for image data from a real-world location to be captured and modelled in a VR/AR Environment. This platform allows AI driven change and anomaly detection to be easily identified by the domain users. Combining immersive technologies with techniques from Data Science and AI (such as image analysis and 3D reconstruction) allows the creation of a setting where remote locations can be interacted from anywhere in the world.</p>
-                    <p class="w3-justify"><b>Scope:</b> From research to conception, design, prototype, and user testing.</p>
-                    <p class="w3-justify"><b>Tools:</b> C++, Unreal Engine, Blender</p>
+                <div id="popup-crew" class="popup-content" style="display:none;">
+                    <h2>Visualising Water Environment in Scotland (CREW)</h2>
+                    <div class="popup-body">
+                        
+                        <!-- full-width banner image that fills the popup window -->
+                        <div style="flex:1 1 100%;margin-bottom:20px;">
+                            <a href="images/fulls/research_crewproject_2.png" class="image">
+                                <img src="images/fulls/research_crewproject_2.png" alt="Visualising Water Environment — CREW" style="width:100%;height:auto;display:block;" />
+                            </a>
+                        </div>
+
+                        <div class="popup-left">
+                            <h4>Overview</h4>
+                            <p class="w3-justify"><b>Overview:</b> CREW (Scotland's Centre of Expertise for Waters) aims to raise awareness of the water environment and pharmaceutical concentrations in populated areas through effective visual communication.</p>
+                            <p class="w3-justify"><b>Challenge:</b> Ideate data-visualisation solutions that communicate pharmaceutical risk to both domain experts and non-expert audiences. This work delivered recommended visualisation approaches as part of the CREW-Reduction project.</p>
+                            <p class="w3-justify"><b>Scope:</b> Ideation, research, visualisation.</p>
+                            <p class="w3-justify"><b>Tools:</b> Sketching, visual techniques, GIS</p>
+                        </div>
+                        <div class="popup-right">
+                            <img src="images/fulls/research_crewproject_2.png" alt="Vis Tool mock up" style="max-width:100%;height:auto;margin-bottom:12px;">
+                            <img src="images/fulls/research_crewproject_1.png" alt="River Map Visualisation mock-up" style="max-width:100%;height:auto;">
+                        </div>
+                    </div>
                 </div>
-                <div class="w3-col m6" style="padding: 70px 20px;">
-                    <img class="w3-image" src="/images/research_immersive_analytics_ (2).png" alt="Immersive Experience" width="500" height="394">
-                    <p></p>
-                    <img class="w3-image" src="/images/research_immersive_analytics_ (1).png" alt="VR/AR Environment" width="500" height="394">
+
+                <div id="popup-2d3d" class="popup-content" style="display:none;">
+                    <h2>2D/3D Visual Analytic Tool for Structural Condition Monitoring and Analysis</h2>
+                    <div class="popup-body">
+
+                        <!-- full-width banner image that fills the popup window -->
+                        <div style="flex:1 1 100%;margin-bottom:20px;">
+                            <a href="images/fulls/research_3d_vis_1_1.png" class="image">
+                                <img src="images/fulls/research_3d_vis_1_1.png" alt="2D/3D Visual Analytic Tool" style="width:100%;height:auto;display:block;" />
+                            </a>
+                        </div>
+
+                        <div class="popup-left">
+                            <h4>Overview</h4>
+                            <p class="w3-justify"><b>Overview:</b> Large volumes of complex data are collected which require visualisation and interaction techniques to enable domain experts to extract useful information. AI technologies enable the development of algorithms to automatically process and analyse this data, but outputs are often complex and require interpretation by domain experts.</p>
+                            <p class="w3-justify"><b>Challenge:</b> Develop a 2D/3D visualisation tool to support structural examiners during condition assessments. The tool allows allocation of structural defects, identification of defect type, and evaluation of severity in a photorealistic 3D environment. A tunnel case study demonstrates applicability.</p>
+                            <p class="w3-justify"><b>Scope:</b> Concept → research → design → prototype → user testing.</p>
+                            <p class="w3-justify"><b>Tools:</b> C++, Unreal Engine, Blender</p>
+                        </div>
+                        <div class="popup-right">
+                            <img src="images/fulls/research_3d_vis_1_1.png" alt="2D/3D Dashboard on a PC" style="max-width:100%;height:auto;margin-bottom:12px;">
+                            <img src="images/fulls/research_3d_vis_2.png" alt="2D/3D Dashboard" style="max-width:100%;height:auto;">
+                        </div>
+                    </div>
                 </div>
-            </div> -->
 
-            <div class="w3-container">
-                <div class="w3-col m6" id="visual">
-                    <h4>2D/3D Visual Analytic Tool for Structural Condition Monitoring and Analysis</h4>
-                    <p class="w3-justify"><b>Overview:</b> Large volume of complex data are collected which require visualisation and interaction techniques to enable domain experts to extract useful information. Artificial Intelligence (AI) technologies enable data science researches to develop AI algorithms to automatically process and analyse this data. However, these algorithms often output complex data that requires AI experts to interpret. This creates a gap between the AI researches and the domain experts, who are not familiar with AI but could benefit from its use.</p>
-                    <p class="w3-justify"><b>Challenge:</b> Development of a 2D/3D visualisation tool to support structural examiners when conducting a structural condition assessment. This tool allows to allocate structural defects, identify its type, and evaluate the severity level in a photorealistic 3D environment. A case study focused on structural examination of tunnels is presented to demonstrate the applicability of the proposed system.</p>
-                    <p class="w3-justify"><b>Scope:</b> From concept to research, design, prototype, and user testing</p>
-                    <p class="w3-justify"><b>Tools:</b> C++, Unreal Engine, Blender </p>
+                <div id="popup-image-acq" class="popup-content" style="display:none;">
+                    <h2>Image Acquisition System for Structural Condition Monitoring</h2>
+                    <div class="popup-body">
+                        <!-- full-width banner image that fills the popup window -->
+                        <div style="flex:1 1 100%;margin-bottom:20px;">
+                            <a href="images/fulls/research_image_aquisition_1.jpg" class="image">
+                                <img src="images/fulls/research_image_aquisition_1.jpg" alt="Image Acquisition System" style="width:100%;height:auto;display:block;" />
+                            </a>
+                        </div>
+
+                        <div class="popup-left">
+                            <h4>Overview</h4>
+                            <p class="w3-justify"><b>Overview:</b> Traditional railway tunnel inspections are time-consuming and can produce inconsistent data. This project designs an optical-thermal camera rig to improve inspection quality and repeatability.</p>
+                            <p class="w3-justify"><b>Challenge:</b> Design and manufacture an imaging rig to supplement visual/manual inspections and provide reliable data for condition monitoring and maintenance planning.</p>
+                            <p class="w3-justify"><b>Scope:</b> 12-week honours thesis: research → conception → design → prototype → user testing.</p>
+                            <p class="w3-justify"><b>Tools:</b> AutoCAD, SolidWorks, Keyshot</p>
+                            <p class="w3-justify"><b>Achievement:</b> Part of a distinction dissertation and published work: <a href="https://ieeexplore.ieee.org/abstract/document/8052679">Imaging system for railway tunnel inspection</a>.</p>
+                        </div>
+                        <div class="popup-right">
+                            <img src="images/fulls/research_image_aquisition_1.jpg" alt="Imaging Acquisition Prototype" style="max-width:100%;height:auto;margin-bottom:12px;">
+                            <img src="images/fulls/research_image_aquisition_2.jpg" alt="Acquisition System Testing" style="max-width:100%;height:auto;">
+                        </div>
+                    </div>
                 </div>
-                <div class="w3-col m6" style="padding: 70px 20px;">
-                    <img class="w3-image" src="/images/research_3d_vis_(1)_1.png" alt="2D/3D Dashboard on a PC" width="500" height="394">
-                    <p></p>
-                    <img class="w3-image" src="/images/research_3d_vis_(2).png" alt="2D/3D Dashboard" width="500" height="394">
+
+                <div id="popup-crop-tracker" class="popup-content" style="display:none;">
+                    <h2>IGS Crop Height Tracker — AI Plant Monitoring Interface</h2>
+                    <div class="popup-body">
+
+                        
+                        <!-- full-width banner image that fills the popup window -->
+                        <div style="flex:1 1 100%;margin-bottom:20px;">
+                            <a href="images/fulls/crop_tracker_device.png" class="image">
+                                <img src="images/fulls/crop_tracker_device.png" alt="IGS Crop Height Tracker" style="width:100%;height:auto;display:block;" />
+                            </a>
+                        </div>
+                        
+                        <div class="popup-left">
+                            <h4>Overview</h4>
+                            <p class="w3-justify"><b>Problem:</b> Manually checking crop heights is time-consuming and inconsistent, making comparisons and harvest prediction difficult. Lack of standardised height data complicates analysis and decision-making.</p>
+                            <p class="w3-justify"><b>Scope & Tools:</b> Design → prototype → testing → launch (Feb–Aug 2022). Azure, APIs, TypeScript & Angular, Plotly.js.</p>
+                            <p class="w3-justify"><b>Outcome:</b> Customer-facing app that tracks crop growth in a Growth Tower and flags plants growing too close to lights. Supports trend analysis and operational alerts. Find more here: <a href="#" target="_blank" rel="noopener">project details</a>.</p>
+                        </div>
+                        <div class="popup-right">
+                            <img src="images/fulls/crop_tracker_device.png" alt="Crop Tracker device screenshot" style="max-width:100%;height:auto;margin-bottom:12px;">
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="w3-container">
-                <div class="w3-col m6">
-                    <h4>Image Acquisition System for Structural Condition Monitoring</h4>
-                    <p class="w3-justify"><b>Overview:</b> Railway tunnel inspections have been mainly undertaken in the traditional manner, which does not provide very reliable data and it is time consuming. Therefore, alternative methods need to be developed to have more quality in data collected from the tunnel inspections.</p>
-                    <p class="w3-justify"><b>Challenge:</b> Design and manufacturing an optical-thermal camera rig for railway tunnel inspection. This system is therefore to supplement the visual and manual procedure, being more effective and contributing to the maintenance of the railway sector.</p>
-                    <p class="w3-justify"><b>Scope:</b> Bachelor Thesis in twelve weeks. From research to conception, design, prototype, and user testing.</p>
-                    <p class="w3-justify"><b>Tools:</b> AutoCAD, SolidWorks, Keyshot</p>
-                    <p class="w3-justify"><b>Achievement:</b> This work is part of my team honours project and was marked as a distinction dissertation. The work was part of a paper called <a href="https://ieeexplore.ieee.org/abstract/document/8052679">“An imaging system for visual inspection and structural condition monitoring of railway tunnels”</a> written by my supervisors Dr. Mark Jenkins and Prof. Gordon Morison.</p>
+                <div id="popup-crop-tracker-guide" class="popup-content" style="display:none;">
+                    <h2>IGS Crop Height Tracker User Guide</h2>
+                    <div class="popup-body">
+                        
+                        <!-- full-width banner image that fills the popup window -->
+                        <div style="flex:1 1 100%;margin-bottom:20px;">
+                            <a href="images/fulls/cht_user_guide_pc_flipped2.png" class="image">
+                                <img src="images/fulls/cht_user_guide_pc_flipped2.png" alt="IGS Crop Height Tracker User Guide" style="width:100%;height:auto;display:block;" />
+                            </a>
+                        </div>
+
+                        <div class="popup-left">
+                            <h4>Overview</h4>
+                            <p class="w3-justify"><b>Problem:</b> Users need comprehensive documentation to effectively use the IGS Crop Height Tracker.</p>
+                            <p class="w3-justify"><b>Scope & Tools:</b> User guide covering installation, setup, and usage instructions.</p>
+                            <p class="w3-justify"><b>Outcome:</b> A complete user guide that helps users understand and utilize the Crop Height Tracker effectively.</p>
+                        </div>
+                        <div class="popup-right">
+                            <img src="images/fulls/cht_user_guide_pc_flipped2.png" alt="IGS Crop Height Tracker User Guide" style="max-width:100%;height:auto;margin-bottom:12px;">
+                        </div>
+                    </div>
                 </div>
-                <div class="w3-col m6" style="padding: 70px 20px;">
-                    <img class="w3-image" src="/images/research_image_aquisition_(1).jpg" alt="Imaging Acquisition Prototype" width="500" height="394">
-                    <p></p>
-                    <img class="w3-image" src="/images/research_image_aquisition_(2).jpg" alt="Acquisition System Testing" width="500" height="394">
+
+                <div id="popup-igs-visuals" class="popup-content" style="display:none;">
+                    <h2>IGS Visualisation Standards, Catalogue & Python Package</h2>
+                    <div class="popup-body">
+                        
+                        <!-- full-width banner image that fills the popup window -->
+                        <div style="flex:1 1 100%;margin-bottom:20px;">
+                            <a href="images/fulls/igs_visualisation_catalogue.png" class="image">
+                                <img src="images/fulls/igs_visualisation_catalogue.png" alt="IGS Visualisation Standards & Catalogue" style="width:100%;height:auto;display:block;" />
+                            </a>
+                        </div>
+
+                        <div class="popup-left">
+                            <h4>Overview</h4>
+                            <p class="w3-justify"><b>Overview:</b> A set of visualisation standards and a catalogue to make plots feel native to their context — consistent grammar, typography and graph elements (title, subtitle, axis labels, legend, data source, logo).</p>
+                            <p class="w3-justify"><b>Challenge:</b> Define and document a practical visual grammar and provide code templates so teams can apply consistent styles across matplotlib, plotly and holoviews.</p>
+                            <p class="w3-justify"><b>Scope & Tools:</b> Documentation, example templates and a python package (matplotlib, plotly, holoviews). Includes "Backstage" developer docs and Quick Style Reference templates.</p>
+                            <p class="w3-justify"><b>Outcome:</b> Visual catalogue, code templates and a library of styles to reduce design debt and speed up consistent reporting. Includes examples (scatter, time-series, boxplot, heatmap) and guidance on common mistakes and limitations.</p>
+                        </div>
+                        <div class="popup-right">
+                            <img src="images/fulls/igs_visualisation_catalogue.png" alt="IGS Visualisation catalogue" style="max-width:100%;height:auto;margin-bottom:12px;">
+                            <img src="images/fulls/igs_visualisation_guidelines_design.png" alt="IGS Visualisation guidelines" style="max-width:100%;height:auto;">
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="w3-container">
-                <div class="w3-col m6">
-                    <h4>Visualising Water Environment in Scotland</h4>
-                    <p class="w3-justify"><b>Overview:</b> <a href="https://www.crew.ac.uk/projects">Scotland's Centre of Expertise for Waters (CREW)</a> project aims is to raise awareness to general audience and experts of the water environment around populated areas and its pharmaceutical concentration in water.  </p>
-                    <p class="w3-justify"><b>Challenge:</b> Ideate Data Visualisation solutions to communicate information on pharmaceutical risk to different audiences from domain users to non-experts. This work was part of the first stage of Scotland CREW-Reduction project, where just visualisation recommendations were required. </p>
-                    <p class="w3-justify"><b>Scope:</b> Ideation, research, visualisation</p>
-                    <p class="w3-justify"><b>Tools:</b> Sketching, Vis Techniques, GIS</p>
+                
+
+                
+
+                <!-- Modal (generic -->
+                <div id="modal-overlay" style="display:none;">
+                    <div id="modal-window" role="dialog" aria-modal="true">
+                        <button id="modal-close" aria-label="Close">×</button>
+                        <div id="modal-scrollable"></div>
+                    </div>
                 </div>
-                <div class="w3-col m6" style="padding: 70px 20px;">
-                    <img class="w3-image" src="/images/researc_crewproject_(2).png" alt="Vis Tool mock up" width="500" height="394">
-                    <p> </p>
-                    <img class="w3-image" src="/images/researc_crewproject_(1).png" alt="River Map Visualisation mock-up" width="500" height="394">
-                </div>
-            </div>
 
-            <div class="w3-container">   
-                <div class="w3-col m6">
-                    <h4>Web-based 2D/3D Visualisation</h4>
-                    <p class="w3-justify"><b>Overview:</b> Many open-source tools like JavaScript library D3, Tableau and R exist to create interactive visualisation platform. Furthermore, there are other tools that allow rendering and interacting 3D graphics like Potree.</p>
-                    <p class="w3-justify"><b>Challenge:</b> Exploration of open-source for 2D and 3D interactive visualisation. Potree allowed discovering its potential tools to measure, annotate and extract the elevation profile from 3D reconstructed model. R and D3 allowed exploring common visualisation techniques such as parallel coordinate and boxplot graphs. </p>
-                    <p class="w3-justify"><b>Scope:</b> Ideation, research, visualisation</p>
-                    <p class="w3-justify"><b>Tools:</b> <a href="https://d3js.org/">D3.js</a>, <a href="http://potree.org/getting_started.html">Potree</a>, <a href="https://ggplot2.tidyverse.org/index.html">ggplot2</a>, RStudio</p>
-                </div>
-                <div class="w3-col m6" style="padding: 70px 20px;">
-                    <img class="w3-image" src="/images/researc_vis_(1).png" alt="D3 and R visualisations" width="500" height="394">
-                    <p></p>
-                    <img class="w3-image" src="/images/researc_vis_(2).png" alt="Potree 3D Visualisation" width="500" height="394">
-                    <p> <br><br></p>
-                </div>
-            </div>
-        </div>
-    </div>
+                <!-- Styles & JS for modal (append before </body> -->
+                <style>
+                    /* Fix thumbnail cropping: show full image inside the grid thumb */
+                    #main .thumb a,
+                    #main .thumb {
+                        overflow: hidden;
+                    }
 
-    <div class="w3-container" style="padding:128px 10%" id="publications">
-        <h2>Publications</h2>
-        <div style="margin-top:48px">
-            <p><i class="fa fa-book fa-fw w3-xxlarge w3-margin-right"></i>An Enhanced Photorealistic Immersive System using Augmented Situated Visualization within Virtual Realit<br> Iglesias, M. I., Jenkins, & Morison, G. <br><dfn>Manuscript submitted for publication (2020)</dfn></p>
-            <p><i class="fa fa-book fa-fw w3-xxlarge w3-margin-right"></i>A 3D Visual Inspection System for Structural Condition Monitoring and Analysis <br> Iglesias, M. I., Jenkins, & Morison, G. <br><dfn>Manuscript submitted for publication (2020)</dfn></p>
-            <p><i class="fa fa-book fa-fw w3-xxlarge w3-margin-right"></i><a href="https://www.scitepress.org/PublicationsDetail.aspx?ID=TzsprwABGhI=&t=1">Rapid Development of a Low-CostWeb-Based 360 Virtual Tour</a> <br> Iglesias, M. I., Jenkins, M. D., & Morison, G. <br><dfn>In Proceedings of the 16th International Conference on Web Information Systems and Technologies 2020 (WEBIST 2020)</dfn></p>
-            <p><i class="fa fa-book fa-fw w3-xxlarge w3-margin-right"></i><a href="https://ieeexplore.ieee.org/abstract/document/8553280">A Deep Convolutional Neural Network for Semantic Pixel-Wise Segmentation of Road and Pavement Surface Cracks</a><br>Jenkins, M. D., Carr, T. A., Iglesias, M. I., Buggy, T., & Morison, G.<br><dfn>In Proceeding of the 26th IEEE European Signal Processing Conference (EUSIPCO 2018), 2120-2124</dfn></p>
-            <p><i class="fa fa-book fa-fw w3-xxlarge w3-margin-right"></i><a href="https://ieeexplore.ieee.org/abstract/document/8405819">Road Crack Detection using a Single Stage Detector Based Deep Neural Network</a><br>  Carr, T. A., Jenkins, M. D.,  Iglesias, M. I., Buggy, T., & Morison, G.<br><dfn>In Proceedings of IEEE Workshop on Environmental, Energy, and Structural Monitoring Systems (EESMS 2018), 1-5</dfn></p>
-            <p><i class="fa fa-book fa-fw w3-xxlarge w3-margin-right"></i><a href="https://upcommons.upc.edu/handle/2117/128135">Design and Construction of an Optical-thermal Camera Rig for Railway Tunnel Inspection</a><br> Iglesias, M. I., Germano, E., Hassib, H., Leal, R., & Morison, G.<br><dfn>Bachelor Thesis (2017)</dfn></p>
-                 
-            <br>
-        </div>          
-    </div>
+                    /* Show full image without stretching/overlap */
+                    #main .thumb img,
+                    #main .thumb a img {
+                        width: 100% !important;
+                        height: auto !important;
+                        display: block;
+                        object-fit: contain;
+                        object-position: center;
+                        /* max-height: 220px; optional: keep thumbnails uniform — adjust value or remove */
+                    }
 
-    <div class="w3-container w3-light-grey" style="padding:128px 10%" id="achievements">
-        <h2>Achievements and Awards</h2>
-        <div style="margin-top:48px">
-            <p><i class="fa fa-trophy fa-fw w3-xxlarge w3-margin-right"></i><a href="https://www.gcu.ac.uk/theuniversity/universitynews/2020-coronahack/">2nd place  Hackathon Competition</a> | <a href="https://www.coronahack.co.uk/">CoronaHack - AI vs. Covid-19 2020</a>. London, UK.</p>
-            <p><i class="fa fa-trophy fa-fw w3-xxlarge w3-margin-right"></i>2nd place 1st Year Poster Competition | <a href="https://www.sicsaconf.org/"> SISCA PhD Conference 2019</a>.  Stirling, UK.</p>
-            <p><i class="fa fa-graduation-cap fa-fw w3-xxlarge w3-margin-right"></i>Grade A Bachelor’s Thesis | European Project Semester Programme 2017. Glasgow, UK</p>
-            <p><i class="fa fa-trophy fa-fw w3-xxlarge w3-margin-right"></i>2nd place Design Competition | Week of Engineering Competition 2015 - Best Barcelona. Barcelona, Spain</p>
-            <p><i class="fa fa-graduation-cap fa-fw w3-xxlarge w3-margin-right"></i>Awarded with a Scolarship | <a href="http://www.rutaquetzal.com/">RUTA QUETZAL-BBVA</a>. Peru-Spain</p>
-        </div>          
-    </div>
+                    #modal-overlay{
+                        position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;
+                    }
+                    #modal-window{
+                        background:#f5f6f7; /* light grey page background inside overlay */
+                        width:100%;max-width:1100px;border-radius:6px;box-shadow:0 10px 30px rgba(0,0,0,0.4);position:relative;
+                    }
 
-    <div class="w3-container" style="padding:128px 10%" id="academia">
-        <h2>Academic Service</h2>
-        <div style="margin-top:48px">
-            <p><i class="fa fa-pencil-square-o fa-fw w3-xxlarge w3-margin-right"></i> Teaching Assistant and Coursework Examiner – Integrated Project Module at GCU | Glasgow, United Kingdom</p>
-            <p><i class="fa fa-calendar fa-fw w3-xxlarge w3-margin-right"></i> Conference Committee Member, Keynote Chair and Workshop Coordinator – SICSA PhD conference 2019 | Stirling, United Kingdom</p>
-            <p><i class="fa fa-pencil-square-o fa-fw w3-xxlarge w3-margin-right"></i> Coursework Examiner - Research Skills and Professional Issues Module at GCU | Virtual Examination</p>
-            <p><i class="fa fa-pencil-square-o fa-fw w3-xxlarge w3-margin-right"></i> Poster Examiner – Research Competition at GCU | Glasgow, United Kingdom</p>
-        </div>          
-    </div>
+                    /* stylish circular close button & hide any poptrox UI if still present */
+                    #modal-close{
+                        position:absolute;
+                        right:12px;
+                        top:12px;
+                        width:42px;
+                        height:42px;
+                        padding:0;
+                        background:linear-gradient(135deg,#ffffff,#f3f4f6);
+                        border:0;
+                        border-radius:50%;
+                        font-size:22px;
+                        line-height:42px;
+                        text-align:center;
+                        color:#333;
+                        box-shadow:0 8px 22px rgba(0,0,0,0.18);
+                        cursor:pointer;
+                    }
 
-    <div class="w3-container  w3-light-grey" style="padding:128px 10%" id="conferences">
-        <h2>Conferences and Events</h2>
-        <div style="margin-top:48px">
-            <p><i class="fa fa-comments-o fa-fw w3-xxlarge w3-margin-right"></i> Nov 2020 - Conference Paper Presentation at <a href="http://www.webist.org/Home.aspx" >WEBIST</a> | Virtual Event</p>
-            <p><i class="fa fa-meetup fa-fw w3-xxlarge w3-margin-right"></i> Montly 2020 - Attending at <a href="https://www.meetup.com/meetup-group-vBHbCmgh/?_af_cid=meetup-group-vBHbCmgh&_af=chapter" >Edinburgh Data Visualisation Meetup</a> | Edinburgh, United Kingdom</p>
-            <p><i class="fa fa-meetup fa-fw w3-xxlarge w3-margin-right"></i> Montly 2020 - Attending at <a href="https://www.meetup.com/Women-Who-Code-Edinburgh/events/" >Women Who Code Edinburgh Meetup</a> | Edinburgh, United Kingdom</p>
-            <p><i class="fa fa-meetup fa-fw w3-xxlarge w3-margin-right"></i> Feb 2020 - Attending at Scraping and Visualising Twitter Data, <a href="https://www.meetup.com/rladies-edinburgh/?_af_cid=rladies-edinburgh&_af=chapter" >R-Ladies Edinburgh</a>  | Edinburgh, United Kingdom</p>
-            <p><i class="fa fa-pencil-square-o fa-fw w3-xxlarge w3-margin-right"></i> Nov 2019 - VR Demonstration at <a href="https://www.sicsa.ac.uk/events/sicsa-demofest-2019-bringing-research-to-life/" >SICSA DemoFest</a> | Edinburgh, United Kingdom</p>
-            <p><i class="fa fa-pencil-square-o fa-fw w3-xxlarge w3-margin-right"></i> Sep 2019 - VR Workshop at <a href="https://madebrave.com/blog/insp-hire-ing-creativity-with-smartstems/" >STEM Insp-Hire</a> | Glasgow, United Kingdom</p>
-            <p><i class="fa fa-comments-o fa-fw w3-xxlarge w3-margin-right"></i> Jun 2019 - Poster Presentation at <a href="https://www.sicsaconf.org/" >SICSA PhD Conference</a> | Stirling, United Kingdom</p>
-            <p><i class="fa fa-comments-o fa-fw w3-xxlarge w3-margin-right"></i> May 2019 - Poster Presentation at <a href="https://www.eventbrite.co.uk/e/research-celebration-tickets-55906641269" >GCU Open Day</a> | Glasgow, United Kingdom</p>
-            <p><i class="fa fa-users fa-fw w3-xxlarge w3-margin-right"></i> Nov 2019 - Conference Attendance at <a href="https://op.europa.eu/en/web/eudataviz" >EU DATA VIZ</a> | Luxembourg, Luxembourg</p>
-            <p><i class="fa fa-users fa-fw w3-xxlarge w3-margin-right"></i> Nov 2018 - Conference Attendance at <a href="https://www.post-binary.com/" >The Post Binary</a> | Frankfurt, Germany</p>
-            <p><i class="fa fa-pencil-square-o fa-fw w3-xxlarge w3-margin-right"></i> Oct 2018 - Poster Designer and Conference Attendance at <a href="https://www.unrealengine.com/en-US/events/gtc-europe-2017" >GTC Europe </a>| Munich, Germany</p>
-            <p><i class="fa fa-users fa-fw w3-xxlarge w3-margin-right"></i> Jul 2018 - Conference Attendance at <a href="https://smart.comune.genova.it/pagine/2nd-international-summer-school-deep-learning-2018" >Deep Learn Summer School</a> | Genova, Italy</p>
-        </div>          
-    </div>
+                    /* ensure no leftover poptrox arrows/loader display */
+                    .poptrox-overlay, .poptrox-loader, .poptrox-next, .poptrox-previous { display:none !important; }
 
-</div>
+                    #modal-scrollable{
+                        background:#ffffff; /* white content box */
+                        padding:24px;
+                        max-height:80vh;
+                        overflow-y:auto;
+                        border-radius:6px;
 
-  <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64" id="contact">
-        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-        <div class="w3-xlarge w3-section">
-            <a class="fa fa-envelope w3-hover-opacity" style="padding: 0px 10px;" href="mailto:maria.insaiglesias@gcu.ac.uk"></a>
-            <a class="fa fa-linkedin w3-hover-opacity" style="padding: 0px 10px;" href="https://www.linkedin.com/in/maria-insa-iglesias-7a96ba124/"></a>
-            <a class="fa fa-instagram w3-hover-opacity" style="padding: 0px 10px;" href="https://www.instagram.com/insamaire/"></a>
-            <a class="fa fa-twitter w3-hover-opacity" style="padding: 0px 10px;" href="https://twitter.com/InsaMaire"></a>
-        
-        </div>
-        <p>Developed by MII | Maria Insa-Iglesias</p>
-    </footer>
-    
+                        /* ensure readable text inside modal */
+                        color: #111 !important;
+                        -webkit-font-smoothing:antialiased;
+                    }
 
-    <script src="index.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175905298-2"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+                    /* Keep modal links inheriting the modal text colour (dark).
+                       Do not override global link styles here — let assets/css/main.css control site links. */
+                    #modal-scrollable a { color: inherit !important; text-decoration: none !important; }
 
-    gtag('config', 'UA-175905298-2');
-    </script>
+                    /* Ensure bold/strong inside modal are dark */
+                    #modal-scrollable b,
+                    #modal-scrollable strong { color: inherit !important; }
 
-</body>
+                    /* layout inside popup */
+                    .popup-body{display:flex;flex-wrap:wrap;gap:20px;}
+                    .popup-left{flex:1 1 420px;min-width:260px;}
+                    .popup-right{flex:1 1 360px;min-width:220px;}
+                    @media (max-width:700px){
+                        .popup-body{flex-direction:column;}
+                    }
+
+                </style>
+
+<script>
+    (function(){
+        function openModalFromElement(el){
+            try{
+                var href = el.getAttribute('href');
+                var targetId = (href && href.charAt(0) === '#') ? href.substring(1) : null;
+                var modalOverlay = document.getElementById('modal-overlay');
+                var modalScrollable = document.getElementById('modal-scrollable');
+                if(!targetId) return;
+                var source = document.getElementById(targetId);
+                if(!source) { console.warn('Popup source not found:', targetId); return; }
+                modalScrollable.innerHTML = source.innerHTML;
+                modalOverlay.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }catch(err){
+                console.error('openModalFromElement error:', err);
+            }
+        }
+
+        // changed selector to .modal-link so Poptrox won't intercept clicks
+        document.querySelectorAll('.modal-link').forEach(function(a){
+            a.addEventListener('click', function(e){
+                e.preventDefault();
+                openModalFromElement(a);
+            });
+        });
+
+        document.getElementById('modal-close').addEventListener('click', function(){
+            document.getElementById('modal-overlay').style.display = 'none';
+            document.body.style.overflow = '';
+        });
+
+        document.getElementById('modal-overlay').addEventListener('click', function(e){
+            if(e.target === this){
+                this.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        });
+
+        document.addEventListener('keydown', function(e){
+            if(e.key === 'Escape'){
+                var mo = document.getElementById('modal-overlay');
+                if(mo && mo.style.display === 'flex'){ mo.style.display = 'none'; document.body.style.overflow = ''; }
+            }
+        });
+    })();
+</script>
+					
+
+				<!-- Footer -->
+					<footer id="footer" class="panel">
+						<div class="inner split">
+							<div>
+								<section>
+									<h2>Magna feugiat sed adipiscing</h2>
+									<p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
+								</section>
+								<section>
+									<h2>Follow me on ...</h2>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									</ul>
+								</section>
+								<p class="copyright">
+									&copy; Unttled. Design: <a href="http://html5up.net">HTML5 UP</a>.
+								</p>
+							</div>
+							<div>
+								<section>
+									<h2>Get in touch</h2>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<input type="text" name="name" id="name" placeholder="Name" />
+											</div>
+											<div class="field half">
+												<input type="text" name="email" id="email" placeholder="Email" />
+											</div>
+											<div class="field">
+												<textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+							</div>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<!-- <script src="assets/js/jquery.poptrox.min.js"></script> -->
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
