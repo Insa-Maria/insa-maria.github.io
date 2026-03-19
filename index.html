@@ -30,25 +30,15 @@
 
 
                 <!-- Main -->
-                <div id="main">
-
-                    
-                    <!-- IGS Crop Height Tracker User Guide -->
+                <div id="main">                   
+                     
+                     <!-- 2D/3D Visual Analytic Tool -->
                     <article class="thumb">
-                        <a href="#popup-crop-tracker-guide" class="modal-link" data-full="images/fulls/cht_user_guide_pc_flipped2.png" title="IGS Crop Height Tracker User Guide">
-                            <img src="images/thumbs/cht_user_guide_pc_flipped2.png" alt="IGS Crop Height Tracker User Guide" />
-                        </a>
-                        <h2>IGS Crop Height Tracker User Guide</h2>
-                        <p>User guide for the IGS Crop Height Tracker — documentation, tutorials, API reference.</p>
-                    </article>
-
-                    <!-- IGS Crop Height Tracker -->
-                    <article class="thumb">
-                        <a href="#popup-crop-tracker" class="modal-link" data-full="images/fulls/crop_tracker_device.png" title="IGS Crop Height Tracker">
-                            <img src="images/thumbs/crop_tracker_device.png" alt="IGS Crop Height Tracker" />
-                        </a>
-                        <h2>IGS Crop Height Tracker</h2>
-                        <p>AI Plant Monitoring Interface — Azure, TypeScript, Angular, Plotly.js. Feb–Aug 2022.</p>
+                        <a href="#popup-2d3d" class="modal-link" data-full="images/fulls/research_3d_vis_1_1.png" title="2D/3D Visual Analytic Tool">
+                             <img src="images/thumbs/research_3d_vis_1_1.png" alt="2D/3D Dashboard on a PC" />
+                         </a>
+                         <h2>2D/3D Visual Analytic Tool</h2>
+                         <p>Tool for structural condition monitoring — C++, Unreal Engine, Blender.</p>
                     </article>
 
                     <!-- Image Acquisition System -->
@@ -59,14 +49,23 @@
                          <h2>Image Acquisition System</h2>
                          <p>Optical-thermal rig for railway tunnel inspections — AutoCAD, SolidWorks.</p>
                      </article>
-                     
-                     <!-- 2D/3D Visual Analytic Tool -->
+
+                     <!-- IGS Crop Height Tracker -->
                     <article class="thumb">
-                        <a href="#popup-2d3d" class="modal-link" data-full="images/fulls/research_3d_vis_1_1.png" title="2D/3D Visual Analytic Tool">
-                             <img src="images/thumbs/research_3d_vis_1_1.png" alt="2D/3D Dashboard on a PC" />
-                         </a>
-                         <h2>2D/3D Visual Analytic Tool</h2>
-                         <p>Tool for structural condition monitoring — C++, Unreal Engine, Blender.</p>
+                        <a href="#popup-crop-tracker" class="modal-link" data-full="images/fulls/crop_tracker_device.png" title="IGS Crop Height Tracker">
+                            <img src="images/thumbs/crop_tracker_device.png" alt="IGS Crop Height Tracker" />
+                        </a>
+                        <h2>IGS Crop Height Tracker</h2>
+                        <p>AI Plant Monitoring Interface — Azure, TypeScript, Angular, Plotly.js. Feb–Aug 2022.</p>
+                    </article>
+
+                    <!-- IGS Crop Height Tracker User Guide -->
+                    <article class="thumb">
+                        <a href="#popup-crop-tracker-guide" class="modal-link" data-full="images/fulls/cht_user_guide_pc_flipped2.png" title="IGS Crop Height Tracker User Guide">
+                            <img src="images/thumbs/cht_user_guide_pc_flipped2.png" alt="IGS Crop Height Tracker User Guide" />
+                        </a>
+                        <h2>IGS Crop Height Tracker User Guide</h2>
+                        <p>User guide for the IGS Crop Height Tracker — documentation, tutorials, API reference.</p>
                     </article>
 
                     <!-- AI Visualisation Tool for Covid-19 -->
@@ -281,12 +280,12 @@
                     <h2>2D/3D Visual Analytic Tool for Structural Condition Monitoring and Analysis</h2>
                     <div class="popup-body">
 
-                        <!-- full-width banner image that fills the popup window -->
+                        <!-- full-width banner image that fills the popup window
                         <div style="flex:1 1 100%;margin-bottom:20px;">
                             <a href="images/fulls/research_3d_vis_1_1.png" class="image">
                                 <img src="images/fulls/research_3d_vis_1_1.png" alt="2D/3D Visual Analytic Tool" style="width:100%;height:auto;display:block;" />
                             </a>
-                        </div>
+                        </div> -->
 
                         <div class="popup-left">
                             <h4>Overview</h4>
@@ -366,11 +365,11 @@
                     <div class="popup-body">
                         
                         <!-- full-width banner image that fills the popup window -->
-                        <div style="flex:1 1 100%;margin-bottom:20px;">
+                        <!-- <div style="flex:1 1 100%;margin-bottom:20px;">
                             <a href="images/fulls/cht_user_guide_pc_flipped2.png" class="image">
                                 <img src="images/fulls/cht_user_guide_pc_flipped2.png" alt="IGS Crop Height Tracker User Guide" style="width:100%;height:auto;display:block;" />
                             </a>
-                        </div>
+                        </div> -->
 
                         <div class="popup-left">
                             <h4>Overview</h4>
@@ -485,85 +484,6 @@
                         <div id="modal-scrollable"></div>
                     </div>
                 </div>
-
-                <!-- Styles & JS for modal (append before </body>
-                <style>
-                    /* Fix thumbnail cropping: show full image inside the grid thumb */
-                    #main .thumb a,
-                    #main .thumb {
-                        overflow: hidden;
-                    }
-
-                    /* Show full image without stretching/overlap */
-                    #main .thumb img,
-                    #main .thumb a img {
-                        width: 100% !important;
-                        height: 100% !important;
-                        display: block;
-                        object-fit: cover;
-                        object-position: center;
-                        /* max-height: 220px; optional: keep thumbnails uniform — adjust value or remove */
-                    }
- 
-                    #modal-overlay{
-                        position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;
-                    }
-                    #modal-window{
-                        background:#f5f6f7; /* light grey page background inside overlay */
-                        width:100%;max-width:1100px;border-radius:6px;box-shadow:0 10px 30px rgba(0,0,0,0.4);position:relative;
-                    }
-
-                    /* stylish circular close button & hide any poptrox UI if still present */
-                    #modal-close{
-                        position:absolute;
-                        right:12px;
-                        top:12px;
-                        width:42px;
-                        height:42px;
-                        padding:0;
-                        background:linear-gradient(135deg,#ffffff,#f3f4f6);
-                        border:0;
-                        border-radius:50%;
-                        font-size:22px;
-                        line-height:42px;
-                        text-align:center;
-                        color:#333;
-                        box-shadow:0 8px 22px rgba(0,0,0,0.18);
-                        cursor:pointer;
-                    }
-
-                    /* ensure no leftover poptrox arrows/loader display */
-                    .poptrox-overlay, .poptrox-loader, .poptrox-next, .poptrox-previous { display:none !important; }
-
-                    #modal-scrollable{
-                        background:#ffffff; /* white content box */
-                        padding:24px;
-                        max-height:80vh;
-                        overflow-y:auto;
-                        border-radius:6px;
-
-                        /* ensure readable text inside modal */
-                        color: #111 !important;
-                        -webkit-font-smoothing:antialiased;
-                    }
-
-                    /* Keep modal links inheriting the modal text colour (dark).
-                       Do not override global link styles here — let assets/css/main.css control site links. */
-                    #modal-scrollable a { color: inherit !important; text-decoration: none !important; }
-
-                    /* Ensure bold/strong inside modal are dark */
-                    #modal-scrollable b,
-                    #modal-scrollable strong { color: inherit !important; }
-
-                    /* layout inside popup */
-                    .popup-body{display:flex;flex-wrap:wrap;gap:20px;}
-                    .popup-left{flex:1 1 420px;min-width:260px;}
-                    .popup-right{flex:1 1 360px;min-width:220px;}
-                    @media (max-width:700px){
-                        .popup-body{flex-direction:column;}
-                    }
-
-                </style> -->
 
 <script>
     (function(){
