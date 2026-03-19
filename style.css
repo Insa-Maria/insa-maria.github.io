@@ -41,10 +41,9 @@ body, html {
 }
 
 #main .thumb > h2 {
-  background: rgba(0, 0, 0, 0.55);
   padding: 0.45em 0.9em;
   border-radius: 0.2em;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
   width: 100%;
   box-sizing: border-box;
 }
@@ -112,6 +111,7 @@ body, html {
 #modal-scrollable b,
 #modal-scrollable strong {
   color: inherit !important;
+  font-weight: 700;
 }
 
 .popup-content {
@@ -162,9 +162,13 @@ body, html {
   margin-bottom: 12px;
 }
 
+#wrapper .popup-content h2,
+#modal-scrollable h2 {
+  color: #111 !important;
+}
+
 @media (max-width: 700px) {
   .popup-body {
     flex-direction: column;
   }
 }
-
