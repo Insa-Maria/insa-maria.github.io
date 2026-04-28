@@ -18,7 +18,7 @@
       <a href="#home" class="w3-bar-item w3-button w3-wide">MII | PORTFOLIO </a>
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small">
-        <a href="#about" class="w3-bar-item w3-button"> About</a>
+        <a href="#main" class="w3-bar-item w3-button"> About</a>
         <a href="#research" class="w3-bar-item w3-button"> Research</a>
         <a href="#publications" class="w3-bar-item w3-button"> Publications</a>
         <a href="#achievements" class="w3-bar-item w3-button"> Achievements</a>
@@ -37,7 +37,7 @@
   <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    <a href="#main" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
     <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button">Research</a>
     <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button">Publications</a>
     <a href="#achievements"  onclick="w3_close()" class="w3-bar-item w3-button"> Achievements</a>
@@ -46,36 +46,32 @@
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
   </nav>
   
-  <!-- Header with full-height image -->
+  <!-- Header with full-height image grid -->
   <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-    <div class="w3-display-left w3-text-white" style="padding:48px">
+    <!-- Image Grid Container -->
+    <div class="image-grid-container" id="imageGrid"></div>
+    <div class="w3-text-white hero-content">
         <!-- Title for large screens -->
-        <span class="w3-jumbo w3-hide-small">Welcome to MII World</span><br>
+        <span class="w3-xxxlarge w3-hide-small">Maria Insa designs and builds intelligent systems for decision-making.</span><br>
         <!-- Title for small screens -->
-        <span class="w3-xxlarge w3-hide-large w3-hide-medium">Welcome to MII World</span><br> 
-        <span class="w3-large">"I am a driven, passionate and dedicated visualization designer looking forward delivering unforgettable experiences"<br> Maria Insa Iglesias, PhD Student based in Edinburgh (UK)</span>
-        <!-- <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more</a></p> -->
+        <span class="w3-xxlarge w3-hide-large w3-hide-medium">Maria Insa designs and builds intelligent systems for decision-making.</span><br>
+        <span class="w3-large">She makes complex systems simple.</span>
+        <div class="hero-actions">
+            <a href="#main" class="hero-button">View projects</a>
+            <a href="#contact" class="hero-button hero-button-secondary">Contact</a>
+        </div>
     </div> 
 
   </header>
 
-  <div class="w3-container" style="padding:128px 10%" id="about">
-    <div class="w3-row-padding">
-        <h2>About</h2>
-
-        <h6 class="w3-justify">Maria Insa-Iglesias is a PhD student at the <a href="https://www.gcu.ac.uk/study/undergraduate/subjects/computing/"> School of Computing of Glasgow Caledonian University (GCU) </a> supervised by <a href="https://researchonline.gcu.ac.uk/en/persons/gordon-morison">Prof Gordon Morison</a> and <a href="https://researchonline.gcu.ac.uk/en/persons/mark-jenkins"> Dr Mark D. Jenkins</a>. Her research is focused on Data Visualisation with Artificial Intelligence (AI) and Virtual Reality (VR). <br><br>
-            Maria studied her BEng (Hons) Industrial Design Engineering and Product Development at <a href="https://www.upc.edu/en">University of Catalonia (UPC)</a>. She did her Bachelor Thesis at GCU as part of the <a href="http://www.europeanprojectsemester.eu/">European Project Semester (EPS)</a> programme in 2017. As a result of the successful EPS project with GCU and Geckotech Solution Ltd, she was offered a position at the company.<br><br>
-            Having a background in product design and seeking challenges and knowledge, in 2018 Maria decided to continue her life journey as a PhD student in Data Visualization for AI and VR. <br><br>
-            Welcome to MII world, enjoy my work as much as I do and feel free to <a href="mailto:maria.insaiglesias@gcu.ac.uk">contact me</a>.
-        </h6>
-    </div>
-  </div>
+  <div id="main" class="w3-container" style="padding:128px 10%">
+    <h2>Projects</h2>
 
     <div class="w3-container w3-light-grey" style="padding:128px 10%" id="research">
         <div class="w3-row-padding">
             <h2>Research</h2>
             
-            <div class="w3-container">
+            <div class="w3-container" id="virtual-tour">
                 <div class="w3-col m6">
                     <h4>360 Virtual Tour of GCU</h4>
                     <p class="w3-justify"><b>Overview:</b> With COVID-19 outbreak, Maria’s PhD supervisor Professor Gordon Morison decided to purchase a 360 camera and for a short period repurpose Maria’s Data Visualization talents. This was initially for the Department of Computing, but immediately became School then subsequently University wide.</p>
@@ -94,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="w3-container">
+            <div class="w3-container" id="ai-covid">
                 <div class="w3-col m6">
                     <h4>AI Visualisation Tool for Covid-19 First Diagnosis</h4>
                     <p class="w3-justify"><b>Overview:</b> Members from GCU's Data Science Research Group, led by Professor Gordon Morison, took part in the Corona Hack. This is a week-long competition, organised by artificial-intelligence consultancy Mindstream-AI, where multi-disciplinary teams from all over the UK use their data skills to devise innovative techniques to combat COVID-19 using publicly available data. The entire event took place online using Slack and Microsoft Teams.</p>
@@ -141,7 +137,7 @@
                 </div>
             </div>
 
-            <div class="w3-container">
+            <div class="w3-container" id="image-acq">
                 <div class="w3-col m6">
                     <h4>Image Acquisition System for Structural Condition Monitoring</h4>
                     <p class="w3-justify"><b>Overview:</b> Railway tunnel inspections have been mainly undertaken in the traditional manner, which does not provide very reliable data and it is time consuming. Therefore, alternative methods need to be developed to have more quality in data collected from the tunnel inspections.</p>
@@ -157,7 +153,7 @@
                 </div>
             </div>
 
-            <div class="w3-container">
+            <div class="w3-container" id="crew">
                 <div class="w3-col m6">
                     <h4>Visualising Water Environment in Scotland</h4>
                     <p class="w3-justify"><b>Overview:</b> <a href="https://www.crew.ac.uk/projects">Scotland's Centre of Expertise for Waters (CREW)</a> project aims is to raise awareness to general audience and experts of the water environment around populated areas and its pharmaceutical concentration in water.  </p>
@@ -172,7 +168,7 @@
                 </div>
             </div>
 
-            <div class="w3-container">   
+            <div class="w3-container" id="web-vis">   
                 <div class="w3-col m6">
                     <h4>Web-based 2D/3D Visualisation</h4>
                     <p class="w3-justify"><b>Overview:</b> Many open-source tools like JavaScript library D3, Tableau and R exist to create interactive visualisation platform. Furthermore, there are other tools that allow rendering and interacting 3D graphics like Potree.</p>
