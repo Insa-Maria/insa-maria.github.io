@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import BottomCtaSection from "../components/BottomCtaSection";
-import backgroundBegin from "../assets/content-images/background_begin.png";
+// import backgroundBegin from "../assets/content-images/background_begin.png";
 import "./AboutPage.css";
 
 const focusAreas = [
@@ -23,15 +23,15 @@ const AboutPage = () => (
           interaction, and engineering, my work focuses on making complex
           systems understandable and usable.
         </p>
-        <div className="profile-actions">
+        {/* <div className="profile-actions">
           <Link className="btn btn-primary" to="/contact">Get in touch</Link>
           <Link className="btn" to="/about">About Maria</Link>
-        </div>
+        </div> */}
       </div>
 
-      <figure className="profile-hero-figure">
+      {/* <figure className="profile-hero-figure">
         <img src={backgroundBegin} alt="" />
-      </figure>
+      </figure> */}
     </section>
 
     <section className="profile-section container">
