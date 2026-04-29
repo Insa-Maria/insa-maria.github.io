@@ -24,8 +24,8 @@ dist-ssr
 *.sw?
 
 # Unused source assets
-src/assets/high-resolution/
-src/assets/content-images/
+public/assets/high-resolution/
+public/assets/content-images/
 src/data/project_tag_update.js
 
 # Unused stylesheets

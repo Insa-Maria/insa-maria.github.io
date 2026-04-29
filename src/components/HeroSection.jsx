@@ -68,12 +68,12 @@ export default function HeroSection() {
         <div className="hero-content">
           <h1>
             <span className="hero-title-highlight">
-              Maria Insa designs and builds
+              Designing and building
               <br />
-              intelligent systems for decision-making.
+              intelligent systems for decision-making
             </span>
             <br />
-            <span className="hero-subtitle">She makes complex systems simple.</span>
+            <span className="hero-subtitle">Make complex systems simple.</span>
           </h1>
 
           <div className="hero-buttons">
