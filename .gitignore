@@ -1,0 +1,36 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Unused source assets
+src/assets/high-resolution/
+src/assets/content-images/
+src/data/project_tag_update.js
+
+# Unused stylesheets
+src/styles/style-1.css
+src/styles/style-2.css
+src/styles/style-4.css
+src/styles/style-5.css
+src/styles/style-6.css

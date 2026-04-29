@@ -1,0 +1,28 @@
+import { projects } from "../data/projects";
+import ProjectGrid from "./ProjectGrid";
+
+export default function TopProjectsSection() {
+  const topProjects = projects.filter(p => p.top);
+  const topProjectLabels = {
+    "crop-monitoring": ["Used in prod"],
+    "3d-inspection-platform": ["Used in real tunnels"],
+    "rave-of-fairness": ["Research workshop"]
+  };
+
+  return (
+    <section id="work" className="section top-projects-section">
+      <div className="container">
+        <h2>Top Projects</h2>
+        <p className="section-intro">
+          Selected work with strong product impact, clear decisions enabled,
+          and enough depth to tell a full story.
+        </p>
+
+        <ProjectGrid
+          projects={topProjects}
+          getLabels={(project) => topProjectLabels[project.id] ?? [project.impact]}
+        />
+      </div>
+    </section>
+  );
+}
