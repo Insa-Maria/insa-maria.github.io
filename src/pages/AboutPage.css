@@ -1,30 +1,81 @@
 .profile-page {
   min-height: 100vh;
-  padding-top: var(--navbar-height);
+  padding-top: calc(var(--navbar-height) + 34px);
   background:
-    linear-gradient(180deg, rgba(255, 247, 214, 0.72), rgba(255, 251, 245, 0) 460px);
+    linear-gradient(180deg, rgba(255, 247, 214, 0.5), rgba(255, 251, 245, 0) 420px);
 }
 
 .profile-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 0.58fr) minmax(280px, 0.42fr);
-  gap: var(--spacing-xl);
-  align-items: center;
-  padding-top: 96px;
+  padding-top: 72px;
   padding-bottom: var(--spacing-xxl);
 }
 
+.profile-intro {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.34fr) minmax(0, 0.66fr);
+  gap: clamp(36px, 6vw, 84px);
+  align-items: start;
+}
+
+.profile-card {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.profile-photo-placeholder {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  border: 1px solid var(--color-border);
+  border-radius: 0;
+  background:
+    linear-gradient(145deg, rgba(255, 221, 87, 0.24), rgba(140, 233, 220, 0.22)),
+    #fff;
+  color: rgba(17, 17, 17, 0.48);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.profile-facts {
+  display: grid;
+  gap: 8px;
+  color: var(--color-muted);
+  font-size: 0.92rem;
+}
+
+.profile-facts p {
+  margin-bottom: 0;
+  color: inherit;
+}
+
+.profile-facts a {
+  color: #21756f;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.profile-hero-copy {
+  max-width: 720px;
+}
+
 .profile-hero-copy h1 {
-  max-width: 760px;
   margin-bottom: var(--spacing-md);
-  font-size: clamp(2rem, 4vw, 3.35rem);
+  font-size: clamp(2.1rem, 4vw, 3.1rem);
   line-height: 1.08;
 }
 
-.profile-lead {
-  max-width: 680px;
+.profile-hero-copy p:not(.section-kicker) {
   color: var(--color-muted);
-  font-size: 1.14rem;
+  font-size: 1.05rem;
+}
+
+.profile-lead {
+  color: var(--color-text);
+  font-size: 1.16rem;
+  font-weight: 600;
 }
 
 .profile-actions {
@@ -34,33 +85,30 @@
   margin-top: var(--spacing-lg);
 }
 
-.profile-hero-figure {
-  overflow: hidden;
-  margin: 0;
-  aspect-ratio: 4 / 5;
-  border: 1px solid var(--color-border);
-  border-radius: 14px;
-  background: #fff;
-  box-shadow: 0 18px 44px rgba(17, 17, 17, 0.12);
-}
-
-.profile-hero-figure img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
 .profile-section {
   padding-top: var(--spacing-xxl);
   padding-bottom: var(--spacing-xxl);
 }
 
+.profile-story-section {
+  padding-top: 120px;
+}
+
+.profile-section-divided {
+  border-top: 1px solid var(--color-border);
+}
+
 .profile-story,
 .profile-grid {
   display: grid;
-  grid-template-columns: minmax(180px, 0.35fr) minmax(0, 0.65fr);
+  grid-template-columns: minmax(180px, 0.34fr) minmax(0, 0.66fr);
   gap: var(--spacing-xl);
+}
+
+.profile-story h2,
+.profile-grid h2 {
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
 }
 
 .profile-copy {
@@ -72,16 +120,27 @@
   font-size: 1rem;
 }
 
-.profile-band {
-  background: rgba(255, 247, 214, 0.58);
+.profile-domains-section {
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
+}
+
+.profile-focus-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.profile-focus-card {
+  max-width: 880px;
+  padding-top: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
 }
 
 .profile-focus {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
   max-width: 760px;
 }
 
@@ -92,19 +151,23 @@
 }
 
 @media (max-width: 760px) {
-  .profile-hero,
+  .profile-hero {
+    padding-top: 48px;
+    padding-bottom: var(--spacing-xl);
+  }
+
+  .profile-intro,
   .profile-story,
   .profile-grid {
     grid-template-columns: 1fr;
   }
 
-  .profile-hero {
-    padding-top: 72px;
-    padding-bottom: var(--spacing-xl);
-    gap: var(--spacing-lg);
+  .profile-card {
+    max-width: 360px;
   }
 
-  .profile-hero-figure {
-    aspect-ratio: 16 / 10;
+  .profile-story-section,
+  .profile-focus-section {
+    padding-top: var(--spacing-xxl);
   }
 }
