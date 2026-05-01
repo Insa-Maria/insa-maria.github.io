@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import BottomCtaSection from "../components/BottomCtaSection";
-// import backgroundBegin from "../assets/content-images/background_begin.png";
 import "./AboutPage.css";
 
 const focusAreas = [
@@ -12,29 +11,53 @@ const focusAreas = [
   "Research communication"
 ];
 
+const contactEmail = "insaiglesias.maria@gmail.com";
+const linkedInUrl = "https://uk.linkedin.com/in/maria-insa-iglesias";
+
 const AboutPage = () => (
   <main className="profile-page">
-    <section className="profile-hero container">
+    <section className="profile-hero profile-intro container">
+      <aside className="profile-card" aria-label="Maria profile details">
+        <div className="profile-photo-placeholder">
+          <span>Photo coming soon</span>
+        </div>
+        <div className="profile-facts">
+          <p>BSc | PhD</p>
+          <p>
+            <a href={linkedInUrl} target="_blank" rel="noreferrer">LinkedIn</a>
+          </p>
+          <p>
+            <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
+          </p>
+          <p>Making complex systems clearer, more usable, and easier to act on.</p>
+        </div>
+      </aside>
+
       <div className="profile-hero-copy">
         <p className="section-kicker">About</p>
-        <h1>Designing intelligent tools for people making complex decisions.</h1>
+        <h1>Hi, I'm Maria.</h1>
         <p className="profile-lead">
-          With a background spanning data visualisation, human-computer
-          interaction, and engineering, my work focuses on making complex
-          systems understandable and usable.
+          I design and build intelligent tools that help people understand
+          complex data, AI outputs, and decision-heavy systems.
         </p>
-        {/* <div className="profile-actions">
-          <Link className="btn btn-primary" to="/contact">Get in touch</Link>
-          <Link className="btn" to="/about">About Maria</Link>
-        </div> */}
+        <p>
+          My work sits between data visualisation, human-computer interaction,
+          and front-end engineering. I enjoy turning messy, high-context
+          problems into interfaces that feel clear, useful, and grounded in how
+          people actually work.
+        </p>
+        <p>
+          I have worked across agriculture, cybersecurity, infrastructure,
+          healthcare, environmental research, immersive experiences, and public
+          sector projects.
+        </p>
+        <div className="profile-actions">
+          <Link className="btn" to="/contact">Get in touch</Link>
+        </div>
       </div>
-
-      {/* <figure className="profile-hero-figure">
-        <img src={backgroundBegin} alt="" />
-      </figure> */}
     </section>
 
-    <section className="profile-section container">
+    <section className="profile-section profile-story-section container">
       <div className="profile-story">
         <h2>How I Work</h2>
         <div className="profile-copy">
@@ -57,10 +80,9 @@ const AboutPage = () => (
       </div>
     </section>
 
-    <section className="profile-section profile-band">
-      <div className="container profile-grid">
+    <section className="profile-section profile-story-section profile-section-divided container">
+      <div className="profile-grid">
         <div>
-          <p className="section-kicker">Domains</p>
           <h2>Comfortable with messy, high-context problems.</h2>
         </div>
         <div className="profile-copy">
@@ -78,16 +100,23 @@ const AboutPage = () => (
       </div>
     </section>
 
-    <section className="profile-section container">
-      <div className="profile-focus">
-        {focusAreas.map(area => (
-          <span key={area} className="badge badge-highlight">{area}</span>
-        ))}
+    <section className="profile-section profile-focus-section container">
+      <div className="profile-focus-card">
+        <p className="profile-location">Based in the UK (Edinburgh), often traveling to Spain (Barcelona).</p>
+        <div className="profile-focus">
+          {focusAreas.map(area => (
+            <span key={area} className="badge badge-highlight">{area}</span>
+          ))}
+        </div>
       </div>
-      <p className="profile-location">Based in Edinburgh, regularly in Barcelona.</p>
     </section>
 
-    <BottomCtaSection />
+    <BottomCtaSection
+      showAbout={false}
+      showWork
+      text="I find real joy in making something obscure become plain, reducing processes that take days to minutes, and helping teams feel confident in the way they understand and use complex information."
+      closing="You can explore selected projects or get in touch if the way I work sounds like a fit."
+    />
   </main>
 );
 

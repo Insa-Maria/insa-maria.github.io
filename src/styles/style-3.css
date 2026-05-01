@@ -563,6 +563,7 @@ p {
 }
 
 .bottom-cta-section {
+  padding: var(--spacing-xxl) 0;
   background: rgba(255, 247, 214, 0.58);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
@@ -570,17 +571,18 @@ p {
 
 .bottom-cta {
   display: grid;
-  grid-template-columns: minmax(220px, 0.48fr) minmax(280px, 0.52fr);
+  grid-template-columns: minmax(220px, 0.44fr) minmax(280px, 0.56fr);
   gap: var(--spacing-xl);
-  align-items: center;
+  align-items: start;
 }
 
 .bottom-cta h2 {
-  max-width: 640px;
+  max-width: 620px;
+  margin-bottom: 0;
 }
 
 .bottom-cta-copy {
-  max-width: 620px;
+  max-width: 640px;
 }
 
 .bottom-cta-copy p {
@@ -591,6 +593,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: var(--spacing-md);
 }
 
 /* Project detail pages */
