@@ -29,7 +29,7 @@ const AboutPage = () => (
           <p>
             <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
           </p>
-          <p>Making complex systems clearer, more usable, and easier to act on.</p>
+          <p>Based in Edinburgh, often between the UK and Barcelona.</p>
         </div>
       </aside>
 
@@ -37,19 +37,19 @@ const AboutPage = () => (
         <p className="section-kicker">About</p>
         <h1>Hi, I'm Maria.</h1>
         <p className="profile-lead">
-          I design and build intelligent tools that help people understand
-          complex data, AI outputs, and decision-heavy systems.
+          I design and build interfaces that make complex data, AI outputs, and
+          decision-heavy systems easier to understand and act on.
         </p>
         <p>
           My work sits between data visualisation, human-computer interaction,
-          and front-end engineering. I enjoy turning messy, high-context
-          problems into interfaces that feel clear, useful, and grounded in how
-          people actually work.
+          research communication, and front-end engineering. I like the space
+          where a technical system becomes a usable product: clearer evidence,
+          better questions, and fewer decisions hidden inside messy data.
         </p>
         <p>
           I have worked across agriculture, cybersecurity, infrastructure,
-          healthcare, environmental research, immersive experiences, and public
-          sector projects.
+          healthcare, environmental research, immersive experiences, education,
+          and public-sector projects.
         </p>
         <div className="profile-actions">
           <Link className="btn" to="/contact">Get in touch</Link>
@@ -62,19 +62,20 @@ const AboutPage = () => (
         <h2>How I Work</h2>
         <div className="profile-copy">
           <p>
-            I work across the full path from shaping the problem, to working
-            with data, designing the interaction, building the system, and
-            getting it into use.
+            I work across the full path from shaping the problem and
+            understanding the users, to working with data, designing the
+            interaction, building the front end, and helping the system get into
+            use.
           </p>
           <p>
             Many of the tools I have built translate complex outputs, such as
-            sensor data, AI models, or large-scale systems, into interfaces that
-            support real-world decisions.
+            sensor data, AI models, spatial inspection data, or large-scale
+            systems, into interfaces that support real-world decisions.
           </p>
           <p>
             My approach is grounded in making complexity usable: structuring
-            systems so people can understand what matters, ask better
-            questions, and move forward with confidence.
+            information so people can see what matters, test assumptions,
+            explain trade-offs, and move forward with confidence.
           </p>
         </div>
       </div>
@@ -89,12 +90,13 @@ const AboutPage = () => (
           <p>
             I have worked across agriculture, cybersecurity, infrastructure,
             healthcare, environmental research, immersive experiences, and
-            public sector projects.
+            public-sector projects.
           </p>
           <p>
             That means designing for very different users, from engineers and
-            operators to researchers and non-technical audiences, while keeping
-            a consistent focus on clarity and decision-making.
+            operators to researchers, students, clinicians, and non-technical
+            audiences, while keeping a consistent focus on clarity, trust, and
+            decision-making.
           </p>
         </div>
       </div>

@@ -3,10 +3,12 @@ import BottomCtaSection from "../components/BottomCtaSection";
 import "./ContactPage.css";
 
 const collaborationTypes = [
-  "Product and UX roles",
-  "Data visualisation work",
-  "AI decision-support tools",
-  "Research and prototyping"
+  "Data visualisation and visual analytics",
+  "Human-computer interaction research",
+  "Decision-support and operational tools",
+  "AI products and complex systems",
+  "Front-end engineering for data-heavy interfaces",
+  "Research communication and data stories"
 ];
 
 const contactEmail = "insaiglesias.maria@gmail.com";
@@ -60,8 +62,9 @@ const ContactPage = () => {
           <p className="section-kicker">Contact</p>
           <h1>Got a complex data challenge or role in mind?</h1>
           <p className="contact-lead">
-            I am interested in teams building clear, useful tools from complex
-            data, AI outputs, spatial systems, or research-heavy products.
+            I am interested in teams turning complex data, AI outputs, spatial
+            systems, or research-heavy ideas into interfaces people can
+            understand, trust, and use.
           </p>
         </div>
 
@@ -101,8 +104,9 @@ const ContactPage = () => {
           <div>
             <h2>Good Fits</h2>
             <p>
-              The strongest match is work where the interface has to help people
-              understand, compare, prioritise, or act.
+              The strongest match is work where clarity matters: tools that help
+              people understand evidence, compare options, prioritise action, or
+              communicate technical insight to others.
             </p>
             <div className="contact-tags">
               {collaborationTypes.map(type => (

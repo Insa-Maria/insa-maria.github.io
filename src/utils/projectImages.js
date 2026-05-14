@@ -12,6 +12,9 @@ const imageEntries = Object.entries(projectImageModules)
 
 export const projectAssetFiles = imageEntries.map(([fileName]) => fileName);
 export const projectImageSources = imageEntries.map(([, src]) => src);
+export const projectImageThumbSources = imageEntries.map(([fileName]) =>
+  getProjectThumbnailSrc(fileName)
+);
 
 const projectImagesByFileName = Object.fromEntries(imageEntries);
 
@@ -19,9 +22,21 @@ export function getProjectImageSrc(fileName) {
   return projectImagesByFileName[fileName] ?? `/assets/full/${fileName}`;
 }
 
+export function getProjectThumbnailSrc(fileName) {
+  const thumbnailName = fileName.replace(/\.[^.]+$/, ".jpg");
+  return `/assets/thumbs/${thumbnailName}`;
+}
+
 export function resolveProjectImageSrc(src) {
   if (!src) return src;
 
   const fileName = decodeURIComponent(src.split("/").pop());
   return getProjectImageSrc(fileName);
+}
+
+export function resolveProjectThumbnailSrc(src) {
+  if (!src) return src;
+
+  const fileName = decodeURIComponent(src.split("/").pop());
+  return getProjectThumbnailSrc(fileName);
 }

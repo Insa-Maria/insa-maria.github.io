@@ -29,6 +29,8 @@ export const projects = [
     description:
       "Detects risky plant growth early to prevent light damage and improve harvest decisions",
     impact: "Used in production",
+    contexts: ["AgriTech", "Operations"],
+    outputs: ["Data products", "Decision-support tools", "Visual analytics"],
     tags: ["Data Product", "AI", "Real-time", "Decision Support", "UX"],
     top: true,
     overview: [
@@ -78,6 +80,8 @@ export const projects = [
     description:
       "Turns complex attack data into actionable insights during live incidents",
     impact: "GBP 650k funding secured",
+    contexts: ["Cybersecurity", "Tech"],
+    outputs: ["Data products", "Decision-support tools", "Visual analytics"],
     tags: ["Data Product", "UX", "Decision Support", "Security", "Visual Analytics"],
     top: false,
     overview: [
@@ -147,6 +151,8 @@ export const projects = [
     description:
       "Enables engineers to assess damage severity directly in a spatial environment",
     impact: "Validated with real tunnel case",
+    contexts: ["Infrastructure", "Engineering"],
+    outputs: ["Decision-support tools", "2D/3D visualisation", "AI interfaces"],
     tags: ["3D", "Visual Analytics", "Decision Support", "Engineering", "UX"],
     top: true,
     overview: [
@@ -196,6 +202,8 @@ export const projects = [
     description:
       "Captures consistent inspection data to support maintenance decisions",
     impact: "Published research",
+    contexts: ["Infrastructure", "Engineering"],
+    outputs: ["Research prototypes", "Data acquisition", "Reports"],
     tags: ["Data Acquisition", "Engineering", "Hardware", "Reliability", "Analysis"],
     top: false,
     sourceLinks: [
@@ -253,6 +261,8 @@ export const projects = [
     description:
       "Explains how ranking systems misrepresent groups through interactive scenarios",
     impact: "Research workshop (Vienna)",
+    contexts: ["Education", "Tech ethics", "Research"],
+    outputs: ["Interactive data stories", "Research prototypes", "Microsites"],
     tags: ["Storytelling", "Networks", "Interactive", "Data Science", "Education"],
     top: true,
     sourceLinks: [
@@ -312,6 +322,8 @@ export const projects = [
     description:
       "Translates complex environmental data into accessible insights for policy awareness",
     impact: "Government research initiative",
+    contexts: ["Environment", "Public sector", "Research"],
+    outputs: ["Data stories", "Reports", "Research communication"],
     tags: ["Data Storytelling", "Public Sector", "UX", "Insight Communication"],
     overview: [
       "CREW, Scotland's Centre of Expertise for Waters, raises awareness of the water environment and pharmaceutical concentrations through effective visual communication.",
@@ -347,6 +359,8 @@ export const projects = [
     description:
       "Evaluates tools for analysing and interacting with complex datasets",
     impact: "Research-informed toolkit decisions",
+    contexts: ["Research", "Tech"],
+    outputs: ["2D/3D visualisation", "Tool evaluations", "Reports"],
     tags: ["Data Viz", "Tooling", "Exploration", "3D", "Analysis"],
     overview: [
       "A survey of open-source tools for interactive 2D and 3D visualisation, including JavaScript libraries and R-based plotting frameworks.",
@@ -386,6 +400,8 @@ export const projects = [
     description:
       "Combines medical imaging and patient data to support early severity assessment",
     impact: "2nd place hackathon",
+    contexts: ["Healthcare", "AI"],
+    outputs: ["AI prototypes", "Decision-support tools", "Visual analytics"],
     tags: ["AI", "Healthcare", "Data Fusion", "Decision Support", "Rapid Prototyping"],
     sourceLinks: [
       {
@@ -431,6 +447,8 @@ export const projects = [
     description:
       "Standardises plots across teams to improve clarity and reduce design debt",
     impact: "Team-wide adoption",
+    contexts: ["Analytics enablement", "Tech"],
+    outputs: ["Design systems", "Data strategy", "Documentation"],
     tags: ["Design Systems", "Data Viz", "Python", "Scalability", "Enablement"],
     overview: [
       "A set of visualisation standards and a catalogue to make plots feel native to their context with consistent grammar, typography, and graph elements.",
@@ -466,6 +484,8 @@ export const projects = [
     description:
       "Enables users to onboard and use complex tools effectively",
     impact: "Improved usability & adoption",
+    contexts: ["Analytics enablement", "AgriTech"],
+    outputs: ["Documentation", "Product enablement", "Reports"],
     tags: ["Documentation", "UX", "Enablement", "Product Thinking"],
     overview: [
       "Documentation set for the IGS Crop Height Tracker, covering onboarding and core workflows.",
@@ -505,6 +525,8 @@ export const projects = [
     description:
       "Allows users to explore real-world spaces remotely",
     impact: "Live deployed + published research",
+    contexts: ["Education", "Immersive web", "Research"],
+    outputs: ["Microsites", "Immersive experiences", "Research communication"],
     tags: ["Immersive", "Web", "UX", "Interaction", "Visual Experience"],
     sourceLinks: [
       {
@@ -554,6 +576,8 @@ export const projects = [
     description:
       "Uses guided gameplay to foster collaboration among neurodivergent users",
     impact: "Real-world community use",
+    contexts: ["Social impact", "Community", "Immersive systems"],
+    outputs: ["Interactive experiences", "Research prototypes", "Game systems"],
     tags: ["Interaction Design", "Social Impact", "UX", "Systems", "Game Design"],
     overview: [
       "A cooperative Minecraft experience where friendly NPCs guide players through shared tasks.",

@@ -1,89 +1,76 @@
 import { useState } from "react";
 import { projects } from "../data/projects";
 import ProjectGrid from "../components/ProjectGrid";
+import "./Portfolio.css";
 
 export default function Portfolio() {
-  const [activeCategory, setActiveCategory] = useState("All");
-  const [selectedTags, setSelectedTags] = useState([]);
+  const [activeContext, setActiveContext] = useState("All");
+  const [activeOutput, setActiveOutput] = useState("All");
 
-  // --- Categories (auto-generated)
-  const categories = ["All", ...new Set(projects.map(p => p.category))];
+  const contexts = ["All", ...new Set(projects.flatMap(p => p.contexts ?? []))];
+  const outputs = ["All", ...new Set(projects.flatMap(p => p.outputs ?? []))];
 
-  // --- Tags (auto-generated)
-  const allTags = [...new Set(projects.flatMap(p => p.tags))];
-
-  // --- Toggle tag selection
-  const toggleTag = (tag) => {
-    setSelectedTags(prev =>
-      prev.includes(tag)
-        ? prev.filter(t => t !== tag)
-        : [...prev, tag]
-    );
-  };
-
-  // --- Filtering logic
   const filteredProjects = projects.filter(project => {
-    const matchesCategory =
-      activeCategory === "All" || project.category === activeCategory;
+    const matchesContext =
+      activeContext === "All" || project.contexts?.includes(activeContext);
 
-    const matchesTags =
-      selectedTags.length === 0 ||
-      selectedTags.every(tag => project.tags.includes(tag));
+    const matchesOutput =
+      activeOutput === "All" || project.outputs?.includes(activeOutput);
 
-    return matchesCategory && matchesTags;
+    return matchesContext && matchesOutput;
   });
 
   return (
-    <section className="section">
+    <section className="section portfolio-page">
       <div className="container">
         <h1>Work</h1>
+        <p className="section-intro portfolio-intro">
+          Filter the archive by the context of the work and the kind of output I
+          delivered. This replaces generic industry labels with categories that
+          better describe complex data, HCI, AI, and visual communication work.
+        </p>
 
-        {/* CATEGORY FILTER */}
-        <div style={{ marginBottom: "24px" }}>
-          {categories.map(cat => (
-            <button
-              key={cat}
-              className="btn"
-              onClick={() => setActiveCategory(cat)}
-              style={{
-                marginRight: "8px",
-                marginBottom: "8px",
-                background: activeCategory === cat ? "#111" : "white",
-                color: activeCategory === cat ? "white" : "black"
-              }}
-            >
-              {cat}
-            </button>
-          ))}
+        <div className="portfolio-filters" aria-label="Project filters">
+          <FilterGroup
+            label="Context"
+            options={contexts}
+            activeOption={activeContext}
+            onChange={setActiveContext}
+          />
+          <FilterGroup
+            label="Output"
+            options={outputs}
+            activeOption={activeOutput}
+            onChange={setActiveOutput}
+          />
         </div>
 
-        {/* TAG FILTER */}
-        <div style={{ marginBottom: "32px" }}>
-          {allTags.map(tag => (
-            <button
-              key={tag}
-              className="badge"
-              onClick={() => toggleTag(tag)}
-              style={{
-                marginRight: "8px",
-                marginBottom: "8px",
-                cursor: "pointer",
-                background: selectedTags.includes(tag) ? "#111" : "#f0f0f0",
-                color: selectedTags.includes(tag) ? "white" : "black"
-              }}
-            >
-              {tag}
-            </button>
-          ))}
-        </div>
-
-        {/* RESULTS */}
-        <p style={{ marginBottom: "16px" }}>
+        <p className="portfolio-results">
           {filteredProjects.length} projects found
         </p>
 
         <ProjectGrid projects={filteredProjects} />
       </div>
     </section>
+  );
+}
+
+function FilterGroup({ label, options, activeOption, onChange }) {
+  return (
+    <div className="portfolio-filter-group">
+      <h2>{label}</h2>
+      <div className="portfolio-filter-options">
+        {options.map(option => (
+          <button
+            key={option}
+            type="button"
+            className={`portfolio-filter-chip${activeOption === option ? " is-active" : ""}`}
+            onClick={() => onChange(option)}
+          >
+            {option}
+          </button>
+        ))}
+      </div>
+    </div>
   );
 }

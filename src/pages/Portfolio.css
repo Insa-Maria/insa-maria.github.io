@@ -1,0 +1,70 @@
+.portfolio-page {
+  padding-top: calc(var(--navbar-height) + 56px);
+}
+
+.portfolio-intro {
+  max-width: 760px;
+}
+
+.portfolio-filters {
+  display: grid;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
+}
+
+.portfolio-filter-group {
+  display: grid;
+  gap: 12px;
+}
+
+.portfolio-filter-group h2 {
+  margin-bottom: 0;
+  color: #164f4a;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.portfolio-filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.portfolio-filter-chip {
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--color-text);
+  padding: 8px 13px;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.portfolio-filter-chip:hover,
+.portfolio-filter-chip:focus-visible {
+  border-color: rgba(33, 117, 111, 0.42);
+  background: rgba(140, 233, 220, 0.2);
+  outline: none;
+}
+
+.portfolio-filter-chip.is-active {
+  border-color: #111;
+  background: #111;
+  color: #fff;
+}
+
+.portfolio-results {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-muted);
+  font-weight: 700;
+}

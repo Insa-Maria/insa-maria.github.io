@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { projectImageSources } from "../utils/projectImages";
+import { projectImageThumbSources } from "../utils/projectImages";
 import "./HeroSection.css";
 
 const visibleImageCount = 8;
 
 export default function HeroSection() {
   const [gridImages, setGridImages] = useState(
-    projectImageSources.slice(0, visibleImageCount)
+    projectImageThumbSources.slice(0, visibleImageCount)
   );
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function HeroSection() {
           }
         }
 
-        const replacementOptions = projectImageSources.filter(
+        const replacementOptions = projectImageThumbSources.filter(
           (src) => !currentImages.includes(src)
         );
         const nextImages = [...currentImages];
@@ -60,7 +60,13 @@ export default function HeroSection() {
       <div className="hero-grid">
         {gridImages.map((src, index) => (
           <div key={index} className="hero-grid-item">
-            <img key={src} src={src} alt="" />
+            <img
+              key={src}
+              src={src}
+              alt=""
+              decoding="async"
+              fetchPriority={index === 0 ? "high" : "auto"}
+            />
           </div>
         ))}
       </div>
