@@ -66,7 +66,7 @@
 - **Scalable Data Visualisation Design System for Consistent Analytics Across Teams**  
   *(IGS Visualisation Standards)*  
 
-- **User Enablement System for Effective Adoption of Data Products**  
+- **Real-Time Crop Monitoring System User Guide**  
   *(IGS Crop Height Tracker User Guide)*  
 
 ---
@@ -159,8 +159,8 @@ Standardises plots across teams to improve clarity and reduce design debt
 
 ---
 
-### User Enablement System for Effective Adoption of Data Products
-Enables users to onboard and use complex tools effectively  
+### Real-Time Crop Monitoring System User Guide
+Documentation for the Real-Time Crop Monitoring System for Yield Protection and Harvest Decisions, helping customers use the app effectively.
 **Impact:** Improved usability & adoption  
 **Signals:** Documentation · UX · Enablement · Product Thinking  
 

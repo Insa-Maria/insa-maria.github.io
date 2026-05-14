@@ -4,20 +4,23 @@ import ProjectGrid from "../components/ProjectGrid";
 import "./Portfolio.css";
 
 export default function Portfolio() {
-  const [activeContext, setActiveContext] = useState("All");
-  const [activeOutput, setActiveOutput] = useState("All");
+  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeDeliverable, setActiveDeliverable] = useState("All");
 
-  const contexts = ["All", ...new Set(projects.flatMap(p => p.contexts ?? []))];
-  const outputs = ["All", ...new Set(projects.flatMap(p => p.outputs ?? []))];
+  const categories = ["All", ...new Set(projects.map(p => p.category))];
+  const deliverables = [
+    "All",
+    ...[...new Set(projects.flatMap(p => p.outputs ?? []))].sort((a, b) => a.localeCompare(b))
+  ];
 
   const filteredProjects = projects.filter(project => {
-    const matchesContext =
-      activeContext === "All" || project.contexts?.includes(activeContext);
+    const matchesCategory =
+      activeCategory === "All" || project.category === activeCategory;
 
-    const matchesOutput =
-      activeOutput === "All" || project.outputs?.includes(activeOutput);
+    const matchesDeliverable =
+      activeDeliverable === "All" || project.outputs?.includes(activeDeliverable);
 
-    return matchesContext && matchesOutput;
+    return matchesCategory && matchesDeliverable;
   });
 
   return (
@@ -25,23 +28,24 @@ export default function Portfolio() {
       <div className="container">
         <h1>Work</h1>
         <p className="section-intro portfolio-intro">
-          Filter the archive by the context of the work and the kind of output I
-          delivered. This replaces generic industry labels with categories that
-          better describe complex data, HCI, AI, and visual communication work.
+          Filter the archive by the portfolio category and the kind of output I
+          delivered. The first filter uses the main portfolio signals and outcomes,
+          while the second filter is based on deliverables such as tools, stories,
+          research outputs and immersive experiences.
         </p>
 
         <div className="portfolio-filters" aria-label="Project filters">
           <FilterGroup
-            label="Context"
-            options={contexts}
-            activeOption={activeContext}
-            onChange={setActiveContext}
+            label="Category"
+            options={categories}
+            activeOption={activeCategory}
+            onChange={setActiveCategory}
           />
           <FilterGroup
-            label="Output"
-            options={outputs}
-            activeOption={activeOutput}
-            onChange={setActiveOutput}
+            label="Deliverables"
+            options={deliverables}
+            activeOption={activeDeliverable}
+            onChange={setActiveDeliverable}
           />
         </div>
 
