@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import BottomCtaSection from "../components/BottomCtaSection";
 import "./AboutPage.css";
 
@@ -14,24 +15,64 @@ const focusAreas = [
 const contactEmail = "insaiglesias.maria@gmail.com";
 const linkedInUrl = "https://uk.linkedin.com/in/maria-insa-iglesias";
 
-const AboutPage = () => (
-  <main className="profile-page">
-    <section className="profile-hero profile-intro container">
-      <aside className="profile-card" aria-label="Maria profile details">
-        <div className="profile-photo-placeholder">
-          <span>Photo coming soon</span>
-        </div>
-        <div className="profile-facts">
-          <p>BSc | PhD</p>
-          <p>
-            <a href={linkedInUrl} target="_blank" rel="noreferrer">LinkedIn</a>
-          </p>
-          <p>
-            <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
-          </p>
-          <p>Based in Edinburgh, often between the UK and Barcelona.</p>
-        </div>
-      </aside>
+const AboutPage = () => {
+  const [showCVForm, setShowCVForm] = useState(false);
+  const [name, setName] = useState('');
+  const [company, setCompany] = useState('');
+
+  const handleCVDownloadClick = () => {
+    setShowCVForm(true);
+  };
+
+  const handleCVFormSubmit = (e) => {
+    e.preventDefault();
+    // Track CV download event with user data
+    if (window.gtag) {
+      window.gtag('event', 'cv_download', {
+        event_category: 'engagement',
+        event_label: 'cv_download_button',
+        custom_parameters: {
+          user_name: name,
+          user_company: company
+        }
+      });
+    }
+    // Download the CV
+    const link = document.createElement('a');
+    link.href = '/CV_MariaInsa_DataVisualisationEngineer_DataScientist.pdf';
+    link.download = 'Maria_Insa_Iglesias_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    // Close the form
+    setShowCVForm(false);
+    setName('');
+    setCompany('');
+  };
+
+  return (
+    <main className="profile-page">
+      <section className="profile-hero profile-intro container">
+        <aside className="profile-card" aria-label="Maria profile details">
+          <div className="profile-photo-placeholder">
+            <span>Photo coming soon</span>
+          </div>
+          <div className="profile-facts">
+            <p>BSc | PhD</p>
+            <p>
+              <a href={linkedInUrl} target="_blank" rel="noreferrer">LinkedIn</a>
+            </p>
+            <p>
+              <button onClick={handleCVDownloadClick} className="cv-download-btn">
+                Download CV
+              </button>
+            </p>
+            <p>
+              <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
+            </p>
+            <p>Based in Edinburgh, often between the UK and Barcelona.</p>
+          </div>
+        </aside>
 
       <div className="profile-hero-copy">
         <p className="section-kicker">About</p>
@@ -113,6 +154,36 @@ const AboutPage = () => (
       </div>
     </section>
 
+    {showCVForm && (
+      <div className="cv-modal-overlay" onClick={() => setShowCVForm(false)}>
+        <div className="cv-modal" onClick={(e) => e.stopPropagation()}>
+          <h3>Download CV</h3>
+          <p>Please provide your name and company (optional but appreciated):</p>
+          <form onSubmit={handleCVFormSubmit}>
+            <label>
+              Name:
+              <input
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+              />
+            </label>
+            <label>
+              Company:
+              <input
+                type="text"
+                value={company}
+                onChange={(e) => setCompany(e.target.value)}
+              />
+            </label>
+            <button type="submit">Download CV</button>
+            <button type="button" onClick={() => setShowCVForm(false)}>Cancel</button>
+          </form>
+        </div>
+      </div>
+    )}
+
     <BottomCtaSection
       showAbout={false}
       showWork
@@ -121,5 +192,6 @@ const AboutPage = () => (
     />
   </main>
 );
+};
 
 export default AboutPage;

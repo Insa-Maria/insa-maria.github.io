@@ -98,6 +98,79 @@
   border-top: 1px solid var(--color-border);
 }
 
+/* CV Modal Styles */
+.cv-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.cv-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cv-modal h3 {
+  margin-top: 0;
+}
+
+.cv-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cv-modal label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cv-modal input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cv-modal button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.cv-modal button[type="submit"] {
+  background: #007bff;
+  color: white;
+}
+
+.cv-modal button[type="button"] {
+  background: #6c757d;
+  color: white;
+}
+
+.cv-download-btn {
+  background: none;
+  border: none;
+  color: var(--color-muted);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+}
+
 .profile-story,
 .profile-grid {
   display: grid;
