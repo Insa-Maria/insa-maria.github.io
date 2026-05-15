@@ -70,7 +70,7 @@ const AboutPage = () => {
             <p>
               <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
             </p>
-            <p>Based in Edinburgh, often between the UK and Barcelona.</p>
+            <p>Based in Edinburgh, UK, with availability for work across the UK and EU.</p>
           </div>
         </aside>
 
