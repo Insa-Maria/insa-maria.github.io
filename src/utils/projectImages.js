@@ -31,7 +31,7 @@ export function resolveProjectImageSrc(src) {
   if (!src) return src;
 
   const fileName = decodeURIComponent(src.split("/").pop());
-  return getProjectImageSrc(fileName);
+  return projectImagesByFileName[fileName] ?? src;
 }
 
 export function resolveProjectThumbnailSrc(src) {
