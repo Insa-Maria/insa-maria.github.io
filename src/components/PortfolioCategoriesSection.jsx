@@ -14,9 +14,9 @@ export default function PortfolioCategoriesSection() {
       <div className="container">
         <h2>Work Categories</h2>
         <p className="section-intro">
-          A structured portfolio built around clear signals and outcomes.
-          Each category demonstrates a focus on solving real problems, making
-          data understandable, and helping teams make better decisions.
+          This portfolio is organised around the types of challenges I’ve taken on.
+          Each category highlights work that helped people understand data, use it
+          more easily, and move forward with confidence.
         </p>
 
         <div className="grid grid-3">

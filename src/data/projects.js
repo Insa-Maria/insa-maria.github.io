@@ -33,6 +33,12 @@ export const projects = [
     outputs: ["AI interfaces", "Data acquisition", "Decision-support tools", "Visual analytics"],
     tags: ["Data Product", "AI", "Real-time", "Decision Support", "UX"],
     top: true,
+    sourceLinks: [
+      {
+        label: "Article",
+        href: "https://www.intelligentgrowthsolutions.com/blog/artificial-intelligence-and-agriculture?_gl=1*149i7h1*_up*MQ..*_ga*MTY5ODUzNDc0Ni4xNzQxODgwMDE3*_ga_SHLSXJ39BN*MTc0MjUwOTcxMy40LjEuMTc0MjUwOTc1OC4xNS4wLjA."
+      }
+    ],
     overview: [
       "AI plant monitoring interface for tracking crop growth in a growth tower and enabling data-driven harvest decisions.",
       "Manual crop-height checks are time-consuming and inconsistent, making comparisons and harvest prediction difficult. Lack of standardised height data complicates analysis and decision-making.",
@@ -155,6 +161,24 @@ export const projects = [
     outputs: ["Decision-support tools", "2D/3D visualisation", "AI interfaces"],
     tags: ["3D", "Visual Analytics", "Decision Support", "Engineering", "UX"],
     top: true,
+    sourceLinks: [
+      {
+        label: "Video demo — 2D/3D",
+        href: "https://www.youtube.com/watch?v=hRsFt0YCobo"
+      },
+      {
+        label: "Video demo — VR",
+        href: "https://www.youtube.com/watch?v=jJzXTUCieDA"
+      },
+      {
+        label: "Journal publication",
+        href: "https://www.sciencedirect.com/science/article/abs/pii/S0926580521002065"
+      },
+      {
+        label: "Conference paper",
+        href: "https://researchonline.gcu.ac.uk/ws/files/51534236/An_Enhanced_Photorealistic_Immersive_System_using_Augmented_Situated_Visualization_within_Virtual_Reality_ManuscriptPoster.pdf"
+      }
+    ],
     overview: [
       "Large volumes of complex inspection data require visual and interactive techniques so domain experts can interpret AI-generated outputs with confidence.",
       "The project developed a 2D/3D visualisation tool that supports structural examiners during condition assessments, enabling defect allocation, classification, and severity evaluation in a photorealistic 3D environment.",
@@ -530,16 +554,24 @@ export const projects = [
     tags: ["Immersive", "Web", "UX", "Interaction", "Visual Experience"],
     sourceLinks: [
       {
+        label: "Video demo",
+        href: "https://www.youtube.com/watch?v=USd4H-B896c"
+      },
+      {
+        label: "Conference talk",
+        href: "https://www.youtube.com/watch?v=Hf_jQ0Z_Shs"
+      },
+      {
+        label: "Blog article",
+        href: "https://www.gcu.ac.uk/currentstudents/news/studentnews360campustour"
+      },
+      {
         label: "Published paper",
         href: "https://www.scitepress.org/PublicationsDetail.aspx?ID=TzsprwABGhI=&t=1"
       },
       {
         label: "GitHub",
         href: "https://github.com/Insa-Maria/Virtual_Tour.git"
-      },
-      {
-        label: "Presentation",
-        href: "https://youtu.be/Hf_jQ0Z_Shs"
       }
     ],
     overview: [
@@ -579,6 +611,20 @@ export const projects = [
     contexts: ["Social impact", "Community", "Immersive systems"],
     outputs: ["Research prototypes"],
     tags: ["Interaction Design", "Social Impact", "UX", "Systems", "Game Design"],
+    sourceLinks: [
+      {
+        label: "News",
+        href: "https://www.thenational.scot/news/19544765.gcu-princeton-team-minecraft-bid-aid-religion-young-people/"
+      },
+      {
+        label: "Interview article",
+        href: "https://issuu.com/salvationarmyuk/docs/wc_08_january_2021_web/6?fr=sZTkxYjQ1NTA0OTU"
+      },
+      {
+        label: "Research report",
+        href: "https://static1.squarespace.com/static/6511bf42f89f287c9e37c4b8/t/6541f82f566ec46a4c5dd8e5/1698822222108/CTI%2BResearch%2BReport%2B4%2BSpiritual%2BLoop%2BProject.pdf"
+      }
+    ],
     overview: [
       "A cooperative Minecraft experience where friendly NPCs guide players through shared tasks.",
       "Many tech interventions focus on education or therapy, not real social connection. The experience needed to feel safe, supportive, and genuinely social while fitting the rhythms and values of a faith community.",

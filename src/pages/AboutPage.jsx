@@ -187,8 +187,8 @@ const AboutPage = () => {
     <BottomCtaSection
       showAbout={false}
       showWork
-      text="I find real joy in making something obscure become plain, reducing processes that take days to minutes, and helping teams feel confident in the way they understand and use complex information."
-      closing="You can explore selected projects or get in touch if the way I work sounds like a fit."
+      text="I like making complicated systems easier to understand, so teams can act with confidence instead of guesswork."
+      closing="If that sounds useful, browse the projects or get in touch."
     />
   </main>
 );
