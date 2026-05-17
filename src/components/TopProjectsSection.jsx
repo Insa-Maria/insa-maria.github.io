@@ -14,8 +14,8 @@ export default function TopProjectsSection() {
       <div className="container">
         <h2>Top Projects</h2>
         <p className="section-intro">
-          Selected work with strong product impact, clear decisions enabled,
-          and enough depth to tell a full story.
+          These are projects that made a real difference, and show why the
+          work mattered for the product and the people using them as decision-support tools.
         </p>
 
         <ProjectGrid
