@@ -54,6 +54,9 @@ export default function ProjectPage() {
     { title: "Decisions Enabled", items: project.ux },
     { title: "Technical Overview", items: project.tech }
   ].filter(section => section.items?.length);
+  const relatedProjects = (project.relatedProjectIds ?? [])
+    .map(relatedId => projects.find(candidate => candidate.id === relatedId))
+    .filter(Boolean);
 
   return (
     <main className="project-page">
@@ -159,6 +162,25 @@ export default function ProjectPage() {
                 items={section.items}
               />
             ))}
+          </section>
+        )}
+
+        {relatedProjects.length > 0 && (
+          <section className="project-related">
+            <h2>Related Work</h2>
+            <div className="project-related-list">
+              {relatedProjects.map(relatedProject => (
+                <Link
+                  key={relatedProject.id}
+                  to={`/project/${relatedProject.id}`}
+                  className="project-related-card"
+                >
+                  <span>{relatedProject.category}</span>
+                  <strong>{relatedProject.title}</strong>
+                  <p>{relatedProject.description}</p>
+                </Link>
+              ))}
+            </div>
           </section>
         )}
       </article>

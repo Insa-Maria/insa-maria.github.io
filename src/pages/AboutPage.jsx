@@ -39,7 +39,7 @@ const AboutPage = () => {
     }
     // Download the CV
     const link = document.createElement('a');
-    link.href = '/CV_MariaInsa_DataVisualisationEngineer_DataScientist.pdf';
+    link.href = '/CV_MariaInsa_DataScientist_DataVisualisationEngineer.pdf';
     link.download = 'Maria_Insa_Iglesias_CV.pdf';
     document.body.appendChild(link);
     link.click();
@@ -58,7 +58,7 @@ const AboutPage = () => {
             <span>Photo coming soon</span>
           </div>
           <div className="profile-facts">
-            <p>BSc | PhD</p>
+            <p>BEng | PhD</p>
             <p>
               <a href={linkedInUrl} target="_blank" rel="noreferrer">LinkedIn</a>
             </p>
