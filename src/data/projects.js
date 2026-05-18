@@ -6,7 +6,7 @@ export const projects = [
   {
     id: "crop-monitoring",
     category: "Data Products",
-    title: "Real-Time Crop Monitoring System for Yield Protection and Harvest Decisions",
+    title: "Crop Height Tracker for Growth Optimisation and Harvest Decisions",
     coverImage: "/assets/full/crop-monitor.png",
     images: [
       "/assets/full/crop-monitor.png",
@@ -23,15 +23,16 @@ export const projects = [
         src: "/assets/full/documentation-crop-monitor.png",
         title: "Adoption and Enablement",
         description:
-          "Supporting documentation and product guidance helped turn the monitoring system into a repeatable workflow for production teams."
+          "Supporting documentation and product guidance helped turn crop-height tracking into a repeatable workflow for production teams."
       }
     ],
     description:
-      "Detects risky plant growth early to prevent light damage and improve harvest decisions",
+      "Uses automated image analysis to monitor plant height, trigger alerts, and support harvest decisions",
     impact: "Used in production",
     contexts: ["AgriTech", "Operations"],
     outputs: ["AI interfaces", "Data acquisition", "Decision-support tools", "Visual analytics"],
     tags: ["Data Product", "AI", "Real-time", "Decision Support", "UX"],
+    relatedProjectIds: ["documentation-crop-monitor"],
     top: true,
     sourceLinks: [
       {
@@ -40,9 +41,9 @@ export const projects = [
       }
     ],
     overview: [
-      "AI plant monitoring interface for tracking crop growth in a growth tower and enabling data-driven harvest decisions.",
-      "Manual crop-height checks are time-consuming and inconsistent, making comparisons and harvest prediction difficult. Lack of standardised height data complicates analysis and decision-making.",
-      "I designed, prototyped, tested, and launched a customer-facing app that tracks crop growth, flags plants growing too close to lights, supports trend analysis, and gives operators a clearer way to act before yield is impacted."
+      "A crop-height tracking tool that uses automated image analysis to monitor plant growth daily, helping growers keep crops healthy, consistent, and on schedule.",
+      "Manual crop-height checks are time-consuming and inconsistent, making comparisons, height alerts, and harvest prediction difficult to manage at scale.",
+      "I designed, prototyped, tested, and launched a customer-facing app that tracks crop growth, flags plants growing too close to lights, supports trend analysis, and streamlines inspection workflows so teams can focus on higher-value tasks."
     ],
 
     hook:
@@ -52,7 +53,7 @@ export const projects = [
       "Manual checks are slow, inconsistent, and often too late to prevent crop damage.",
 
     solution:
-      "I built a live monitoring system that tracks plant growth across towers, flags risk conditions, and gives operators a clear view of what needs action.",
+      "I built a live crop-height tracking interface that monitors plant growth across towers, flags height risks at different growth stages, and gives operators a clear view of what needs action.",
 
     impactDetails: [
       "Enabled operators to identify plants exceeding safe height thresholds early, resulting in reduced crop loss and fewer emergency interventions",
@@ -72,7 +73,7 @@ export const projects = [
     tech: [
       "Angular + TypeScript for a fast, operational dashboard used in daily workflows",
       "Plotly.js to explore growth trends and detect anomalies interactively",
-      "Live plant height data collected via sensors and APIs",
+      "Automated image analysis and APIs for daily plant-height monitoring",
       "Azure-backed system supporting real-time updates and scalability across farms",
       "API layer enabling integration with existing farm systems"
     ]
@@ -160,6 +161,7 @@ export const projects = [
     contexts: ["Infrastructure", "Engineering"],
     outputs: ["Decision-support tools", "2D/3D visualisation", "AI interfaces"],
     tags: ["3D", "Visual Analytics", "Decision Support", "Engineering", "UX"],
+    relatedProjectIds: ["image-acquisition-system"],
     top: true,
     sourceLinks: [
       {
@@ -221,7 +223,7 @@ export const projects = [
   {
     id: "image-acquisition-system",
     category: "Data Products",
-    title: "High-Precision Imaging System for Infrastructure Monitoring and Maintenance Planning",
+    title: "Imaging System for Infrastructure Monitoring and Maintenance Planning",
     coverImage: "/assets/full/image-acquisition-system (1).jpg",
     description:
       "Captures consistent inspection data to support maintenance decisions",
@@ -229,11 +231,16 @@ export const projects = [
     contexts: ["Infrastructure", "Engineering"],
     outputs: ["Research prototypes", "Data acquisition", "Reports"],
     tags: ["Data Acquisition", "Engineering", "Hardware", "Reliability", "Analysis"],
+    relatedProjectIds: ["3d-inspection-platform"],
     top: false,
     sourceLinks: [
       {
         label: "Published paper",
         href: "https://ieeexplore.ieee.org/abstract/document/8052679"
+      },
+      {
+        label: "Related Innovate UK award",
+        href: "https://www.gov.uk/government/news/ktp-best-of-the-best-2019-winners-announced"
       }
     ],
     overview: [
@@ -503,27 +510,28 @@ export const projects = [
   {
     id: "documentation-crop-monitor",
     category: "Scalable Systems",
-    title: "Real-Time Crop Monitoring System User Guide",
+    title: "Crop Height Tracker User Guide",
     coverImage: "/assets/full/documentation-crop-monitor.png",
     description:
-      "Documentation for the Real-Time Crop Monitoring System for Yield Protection and Harvest Decisions, helping customers use the app effectively.",
+      "User guidance for a crop-height tracking tool, helping customers monitor growth, respond to alerts, and adopt the workflow confidently.",
     impact: "Improved usability & adoption",
     contexts: ["Analytics enablement", "AgriTech"],
     outputs: ["Documentation", "Reports"],
     tags: ["Documentation", "UX", "Enablement", "Product Thinking"],
+    relatedProjectIds: ["crop-monitoring"],
     overview: [
-      "Documentation set for the IGS Crop Height Tracker, covering onboarding and core workflows.",
-      "Users needed clear, comprehensive guidance to adopt the tool quickly and confidently.",
-      "The outcome was a complete guide covering installation, setup, usage instructions, tutorials, and API reference material to help users understand and use the Crop Height Tracker effectively."
+      "Documentation set for a crop-height tracking tool, covering onboarding, setup, daily monitoring workflows, height alerts, and reference material.",
+      "Users needed clear guidance to adopt automated crop inspections quickly and understand how the tool supported healthier, more consistent growth.",
+      "The outcome was a complete guide that helped customers track plant height, respond to alerts at different growth stages, and use the product confidently in operational workflows."
     ],
     problem:
-      "Users needed clearer guidance to adopt the Crop Height Tracker confidently.",
+      "Users needed clearer guidance to adopt automated crop-height monitoring confidently.",
     solution:
       "I created a documentation set covering onboarding, setup, usage workflows, tutorials, and reference material.",
     impactDetails: [
       "Improved onboarding for a complex data product",
       "Helped users understand core workflows more quickly",
-      "Supported adoption of the Crop Height Tracker in operational contexts"
+      "Supported adoption of crop-height tracking in operational contexts"
     ],
     ux: [
       "How to get started with the tool",

@@ -11,7 +11,7 @@
 
 ### Projects
 
-- **Real-Time Crop Monitoring System for Yield Protection and Harvest Decisions**  
+- **Real-Time Crop Monitoring System for Growth Optimisation and Harvest Decisions**  
   *(IGS Crop Height Tracker)*  
   Detects risky plant growth early to prevent light damage and improve harvest decisions.
 
@@ -90,7 +90,7 @@
 
 ## 🟢 Data Products That Drive Decisions
 
-### Real-Time Crop Monitoring System for Yield Protection and Harvest Decisions
+### Real-Time Crop Monitoring System for Growth Optimisation and Harvest Decisions
 Detects risky plant growth early to prevent light damage and improve harvest decisions  
 **Impact:** Used in production  
 **Signals:** Data Product · AI · Real-time · Decision Support · UX  
@@ -160,7 +160,7 @@ Standardises plots across teams to improve clarity and reduce design debt
 ---
 
 ### Real-Time Crop Monitoring System User Guide
-Documentation for the Real-Time Crop Monitoring System for Yield Protection and Harvest Decisions, helping customers use the app effectively.
+Documentation for the Real-Time Crop Monitoring System for Growth Optimisation and Harvest Decisions, helping customers use the app effectively.
 **Impact:** Improved usability & adoption  
 **Signals:** Documentation · UX · Enablement · Product Thinking  
 
@@ -185,7 +185,7 @@ Uses guided gameplay to foster collaboration among neurodivergent users
 
 # Top Projects
 
-## AI Crop Monitoring System for Yield Protection and Harvest Decisions
+## AI Crop Monitoring System for Growth Optimisation and Harvest Decisions
 ### Summary
 Greenhouse teams need to monitor thousands of plants daily, but manual checks are slow, inconsistent, and often too late to prevent crop damage.
 
